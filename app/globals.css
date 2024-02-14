@@ -11,7 +11,3 @@
 *::after {
   box-sizing: border-box;
 }
-
-.button-shadow {
-  box-shadow: 0.1rem 0.2rem black;
-}
