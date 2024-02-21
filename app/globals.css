@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --title-background: #FF006E;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.bg-pink {
+  background-color: #FF006E;
+}
+
+.button-shadow {
+  box-shadow: 0.1rem 0.2rem black;
 }

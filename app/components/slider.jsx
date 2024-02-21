@@ -29,7 +29,7 @@ export default function Slider({ imageUrls }) {
                 {imageUrls.map((src, index) => (
                     <Image src={src}
                         key={index}
-                        className="block object-cover w-full h-full transition-all duration-300 ease-in-out aspect-square md:aspect-video shrink-0 grow" 
+                        className="block object-cover w-full h-full transition-all duration-300 ease-in-out aspect-square sm:aspect-video shrink-0 grow" 
                         style={{translate: `${-100 * imageIndex}%`}}
                         height={1200} width={1200}
                     />
@@ -53,6 +53,20 @@ export default function Slider({ imageUrls }) {
                         }
                     </button>
                 ))}
+            </div>
+
+            <div className="absolute flex justify-center w-10/12 -translate-x-1/2 left-1/2 top-5">
+                <div className="flex flex-col items-end gap-5">
+                    <div className="flex justify-center w-full px-5 py-1 bg-yellow-400 border-2 border-black sm:px-20 button-shadow">
+                        <h1 className="text-xl font-bold md:text-3xl">
+                            XIII SEMANA DA COMPUTAÇÃO
+                        </h1>
+                    </div>
+
+                    <a href="#" className="flex justify-center w-3/5 max-w-[200px] p-1 bg-pink border-2 border-black button-shadow cursor-pointer font-bold text-white sm:text-xl">
+                        {'VEJA MAIS >>>'}
+                    </a>
+                </div>
             </div>
         </div>
     )
