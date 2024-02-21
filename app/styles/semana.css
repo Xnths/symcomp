@@ -25,3 +25,37 @@
     background-color: var(--bg-pink);
     color: white;
 }
+
+.schedule {
+
+}
+
+.schedule__nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem 1rem 0;
+    align-items: center;
+    padding: 0.4rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    box-shadow: 0.4rem 0.4rem 0 black;
+    width: 0.5rem;
+    border: solid 0.4rem black;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.schedule__nav-item--active {
+    background-color: var(--bg-yellow);
+}
+
+.schedule__nav--day-week {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.schedule__nav--date {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
