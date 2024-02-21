@@ -7,10 +7,40 @@
 *::after {
   box-sizing: border-box;
 }
+/* BACKGROUND COLORS: */
 
 .bg-pink {
   background-color: #FF006E;
 }
+
+.bg-yellow {
+  background-color: #FFBE0B;
+}
+
+.bg-blue {
+  background-color: #3A86FF;
+}
+
+.bg-dark-blue {
+  background-color: #003049;
+}
+
+.bg-orange {
+  background-color: #FB5607;
+}
+
+.bg-green {
+  background-color: #7ed957;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
 
 .button-shadow {
   box-shadow: 0.1rem 0.2rem black;
