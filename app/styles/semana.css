@@ -48,6 +48,7 @@
     /* background-color: rgba(0, 128, 0, 0.233); */
     font-size: 5.5rem;
     color: var(--bg-yellow);
+    line-height: 0.5;
 }
 
 #presentation_logo_title_dacomp {
