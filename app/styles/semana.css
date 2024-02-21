@@ -8,17 +8,28 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20rem;
+    height: 21.3rem;
     background-color: var(--bg-pink);
+    border: 1px solid var(--bg-dark-blue);
 }
 
 .presentation__logo_ball {
     position: absolute;
     z-index: 1;
     border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
+    width: 14.4rem;
+    height: 14.4rem;
     background-color: white;
+}
+
+.presentation__logo_rectangle {
+    position: absolute;
+    z-index: 1;
+    width: 110%;
+    height: 5.6rem;
+    background-color: var(--bg-dark-blue); 
+    rotate: -4deg;
+    overflow: hidden;
 }
 
 .presentation__logo_title {
@@ -27,41 +38,34 @@
     justify-items: center;
     align-items: center;
     z-index: 2;
-    font-size: 5rem;
-    text-shadow: -0.25rem 0.25rem var(--bg-dark-blue);
+    text-shadow: -0.26rem 0.26rem var(--bg-dark-blue);
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
-}
-
-.presentation__logo_rectangle {
-    position: absolute;
-    z-index: 1;
-    width: 110%;
-    height: 6rem;
-    background-color: var(--bg-dark-blue); 
-    rotate: -3deg;
-    overflow: hidden;
+    /* border: 1px solid var(--bg-dark-blue); */
 }
 
 #presentation_logo_title_semana {
     /* background-color: rgba(0, 128, 0, 0.233); */
-    font-size: 5.5rem;
+    font-size: 6.6rem;
     color: var(--bg-yellow);
     line-height: 0.5;
 }
 
 #presentation_logo_title_dacomp {
-    display: flex;
     /* background-color: rgba(128, 0, 128, 0.404); */
-    font-size: 3rem;
+    font-size: 4.2rem;
     color: var(--bg-orange);
+    line-height: 1.2;
 }
 
 #presentation_logo_title_edition {
-    font-size: 3rem;
     /* background-color: rgba(0, 0, 255, 0.349); */
+    font-size: 3.6rem;
     color: var(--bg-pink);
+    position: relative;
+    top: -0.5rem;
+    right: 0.6rem;
 }
 
 /* STYLE EVENT */
