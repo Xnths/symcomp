@@ -7,6 +7,18 @@
 *::after {
   box-sizing: border-box;
 }
+
+:root {
+  --bg-pink: #FF006E;
+  --bg-yellow: #FFBE0B;
+  --bg-blue: #3A86FF;
+  --bg-dark-blue: #003049;
+  --bg-orange: #FB5607;
+  --bg-green: #7ed957;
+  --bg-white: white;
+  --bg-black: black;
+}
+
 /* BACKGROUND COLORS: */
 
 .bg-pink {
