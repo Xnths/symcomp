@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 1rem 1.4rem;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem 1rem 0;
+    align-items: center;
+    padding: 0.4rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    box-shadow: 0.4rem 0.4rem 0 black;
+    width: fit-content;
+    border: solid 0.4rem black;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.nav__item-selected {
+    background-color: var(--bg-pink);
+    color: white;
+}
