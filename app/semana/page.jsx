@@ -1,5 +1,10 @@
+import React from "react";
+import Nav from "../components/nav";
+
 export default function Semana() {
     return (
-        <h1>oi</h1>
+        <div>
+            <Nav />
+        </div>
     )
 }
