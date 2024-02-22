@@ -15,7 +15,7 @@ export default function ItemEventInfo (props) {
                 <LocationOnIcon id="presentation__eventinfos_locationicon" className='presentation__icons'/>
                 <div className='presentation__eventinfos_text'>
                     <span id="presentation__eventinfos_local_name">AUDITÓRIO JACY MONTEIRO </span>
-                    <span id="presentation__eventinfos_local_adress">R. do Matão, 1010 - BUtantã, São Paulo - SP, 05508-090</span>
+                    <span id="presentation__eventinfos_local_adress">R. do Matão, 1010 - Butantã, São Paulo - SP, 05508-090</span>
                 </div>
             </div>
         </div>

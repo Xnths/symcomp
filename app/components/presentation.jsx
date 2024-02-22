@@ -5,7 +5,7 @@ import ItemSocialMedia from "../atomic/item-social-media";
 
 export default function Presentation () {
     return (
-        <div>
+        <div className="presentation">
             <ItemLogo />
             <ItemEventInfo />
             <ItemSocialMedia />
