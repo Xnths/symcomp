@@ -73,6 +73,7 @@
     align-items: center;
     align-content: center;
     background-color: var(--bg-pink);
+    padding-bottom: 5rem;
 }
 
 /* STYLE LOGO */
@@ -264,4 +265,106 @@
         height: 3rem;
         width: 3rem;
     }
+}
+
+
+/* ---------------------- */
+
+/* STYLE PATROCINADORES */
+
+.patrocinadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark-blue);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    height: fit-content;
+    
+    > p {
+        color: white;
+        text-align: center;
+    }
+}
+
+#patrocinadores_title {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+
+}
+
+#patrocinadores_text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0rem 1rem 2rem 1rem;
+}
+
+.patrocinadores_button {
+    display: flex;
+    background-color: var(--bg-yellow);
+    height: 3.3rem;
+    width: 14rem;
+    align-items: center;
+    justify-content: center;
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+
+    color: var(--bg-dark-blue);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+        background-color: var(--bg-pink);
+        cursor: pointer;
+    }
+}
+
+.patrocinadores_patrocinadorbox {
+    display: flex;
+    width: 8.75rem;
+    height: 8.75rem;
+    background-color: white;
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+.patrocinadores_patrocinadorname {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    /* background-color: blue; */
+    height: 2.5rem;
+    margin-top: 0.3rem;
+}
+
+.patrocinadores_cota {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    > div {
+        margin: 2.5rem 1.2rem 0rem 1.2rem;
+    }
+}
+
+
+.patrocinadores_patrocinadorbox_label {
+    position: relative;
+    display: flex;
+    height: 2rem;
+    width: 4.8rem;
+    border: 0.125rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+    top: -1rem;
+    right: -0.5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
 }

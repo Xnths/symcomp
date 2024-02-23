@@ -17,6 +17,9 @@
   --bg-green: #7ed957;
   --bg-white: white;
   --bg-black: black;
+  --bg-gold: #FFBE0B;
+  --bg-silver: #A6A6A6;
+  --bg-bronze: #F1754E;
 }
 
 /* BACKGROUND COLORS: */
@@ -52,6 +55,7 @@
 .bg-black {
   background-color: black;
 }
+
 
 
 .button-shadow {
