@@ -31,11 +31,10 @@
 .presentation__logo_rectangle {
     position: absolute;
     z-index: 1;
-    width: 110%;
-    height: 5.6rem;
+    width: 105%;
+    height: 5.5rem;
     background-color: var(--bg-dark-blue); 
     rotate: -4deg;
-    overflow: hidden;
 }
 
 .presentation__logo_title {
@@ -53,21 +52,21 @@
 
 #presentation_logo_title_semana {
     /* background-color: rgba(0, 128, 0, 0.233); */
-    font-size: 6.6rem;
+    font-size: 5.5rem;
     color: var(--bg-yellow);
     line-height: 0.5;
 }
 
 #presentation_logo_title_dacomp {
     /* background-color: rgba(128, 0, 128, 0.404); */
-    font-size: 4.2rem;
+    font-size: 3.5rem;
     color: var(--bg-orange);
     line-height: 1.2;
 }
 
 #presentation_logo_title_edition {
     /* background-color: rgba(0, 0, 255, 0.349); */
-    font-size: 3.6rem;
+    font-size: 3rem;
     color: var(--bg-pink);
     position: relative;
     top: -0.5rem;
@@ -80,7 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    min-width: 200px;
     height: 7.3rem;
     background-color: var(--bg-pink);
 }
@@ -101,7 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
+    width: 3.5rem;
     height: 2.6rem;
 }
 
@@ -143,7 +142,7 @@
 }
 
 #presentation__eventinfos_local_adress {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: white;
 }
@@ -179,7 +178,7 @@
     width: 12.5rem;
     /* background-color: pink; */
 
-    > div {
+    > a {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -188,7 +187,7 @@
         color: white;
     }
 
-    > div > div {
+    > a > div {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -197,6 +196,4 @@
         height: 3rem;
         width: 3rem;
     }
-
-
 }
