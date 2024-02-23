@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     overflow-x: scroll;
+    background-color: var(--bg-pink);
     padding: 1rem 1.4rem;
 }
 
@@ -19,6 +20,7 @@
     border: solid 0.4rem black;
     text-align: center;
     text-wrap: nowrap;
+    background-color: white;
 }
 
 .nav__item-selected {
@@ -27,7 +29,11 @@
 }
 
 .schedule {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 1rem 1.4rem;
 }
 
 .schedule__nav-item {
@@ -44,6 +50,7 @@
     border: solid 0.4rem black;
     text-align: center;
     text-wrap: nowrap;
+    line-height: 1;
 }
 
 .schedule__nav-item--active {

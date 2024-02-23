@@ -1,4 +1,21 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { config as dotenvConfig } from 'dotenv';
 
-export default nextConfig;
+dotenvConfig({ path: '.env' });
+
+const nextConfig = {
+  env: {
+    SPREADSHEET_ID: process.env.SPREADSHEET_ID,
+  },
+};
+
+const webpackConfig = (config, { isServer }) => {
+  if (!isServer) {
+    config.node = {
+      fs: 'empty'
+    };
+  }
+
+  return config;
+};
+
+export { nextConfig, webpackConfig };
