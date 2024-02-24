@@ -28,6 +28,14 @@
     color: white;
 }
 
+.cronograma__title {
+    text-align: center;
+    margin: 3.5rem 0 1rem 0;
+    font-size: 1.8rem;
+    color: var(--bg-dark-blue);
+    font-weight: 500;
+}
+
 .schedule {
     display: flex;
     flex-direction: row;
@@ -74,6 +82,8 @@
     align-content: center;
     background-color: var(--bg-pink);
     padding-bottom: 5rem;
+    height: calc(100vh - 6.9rem);
+    width: 100vw;
 }
 
 /* STYLE LOGO */
@@ -82,7 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 21.3rem;
     background-color: var(--bg-pink);
     /* border: 1px solid var(--bg-dark-blue); */
@@ -104,6 +114,7 @@
     height: 5.5rem;
     background-color: var(--bg-dark-blue); 
     rotate: -4deg;
+    overflow: hidden;
 }
 
 .presentation__logo_title {
