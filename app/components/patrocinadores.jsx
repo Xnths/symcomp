@@ -11,6 +11,9 @@ export default function Patrocinadores () {
                     <button>QUERO PATROCINAR!</button>
                 </a>    
             </div>
+            <div className="text-white">
+                Ninguém ainda :(
+            </div>
             <div className="patrocinadores_cota">
                 {/* <ItemPatrocinadorBox backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Panda" imgPath="../../public/logo_ime_preta.png"/>
 

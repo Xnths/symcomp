@@ -60,7 +60,9 @@ export default function ScheduleNav (sheetdata) {
                 <ScheduleNavItem date="26/04" dayWeek="SEX" onClick={handleClickSex} selected={sex} />
             </div>
             <div className="schedule-details">
-
+                <div className="text-center text-black my-5">
+                    Ninguém ainda :(
+                </div>
             </div>
         </div>
     )

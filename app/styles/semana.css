@@ -379,3 +379,27 @@
     font-size: 1.2rem;
     font-weight: 800;
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img--members {
+    width: 80%;
+    border: solid 0.25rem black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+.about__text-container {
+    width: 80%;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.about__text {
+    font-size: 1.2rem;
+    text-indent: 1.5rem;
+    text-align: justify;
+}
