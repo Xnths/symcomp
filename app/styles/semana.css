@@ -81,7 +81,6 @@
     align-items: center;
     align-content: center;
     background-color: var(--bg-pink);
-    padding-bottom: 5rem;
     height: calc(100vh - 6.9rem);
     width: 100vw;
 }
@@ -237,6 +236,7 @@
     height: 9.3rem;
     background-color: var(--bg-pink);
     align-items: center;
+    margin-top: 5rem;
 
     > p {
         padding-top: 1.25rem;

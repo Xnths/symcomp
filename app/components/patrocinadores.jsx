@@ -12,7 +12,7 @@ export default function Patrocinadores () {
                 </a>    
             </div>
             <div className="patrocinadores_cota">
-                <ItemPatrocinadorBox backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Panda" imgPath="../../public/logo_ime_preta.png"/>
+                {/* <ItemPatrocinadorBox backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Panda" imgPath="../../public/logo_ime_preta.png"/>
 
 
                 <ItemPatrocinadorBox backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Polar"/>
@@ -21,7 +21,7 @@ export default function Patrocinadores () {
 
                 <ItemPatrocinadorBox backgroundColor="var(--bg-silver)" cotaPatrocinio="PRATA" patrocinadorName="Google"/>
 
-                <ItemPatrocinadorBox backgroundColor="var(--bg-bronze)" cotaPatrocinio="BRONZE" patrocinadorName="16 CARRIAGES"/>
+                <ItemPatrocinadorBox backgroundColor="var(--bg-bronze)" cotaPatrocinio="BRONZE" patrocinadorName="16 CARRIAGES"/> */}
             </div>
         </div>
     )
