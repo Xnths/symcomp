@@ -1,12 +1,14 @@
+import AboutUs from "./components/about-us";
 import Carousel from "./components/carousel";
 import ProjectSection from "./components/project-section";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center w-full min-h-screen">
+    <main className="flex flex-col items-center w-full min-h-screen gap-10 bg-gray-50">
       <h1>Symcomp</h1>
       <Carousel />
       <ProjectSection />
+      <AboutUs />
     </main>
   );
 }

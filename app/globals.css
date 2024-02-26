@@ -12,6 +12,14 @@
   background-color: #FF006E;
 }
 
+.bg-yellow {
+  background-color: #FFBE0C;
+}
+
+.bg-blue {
+  background-color: #003049;
+}
+
 .button-shadow {
-  box-shadow: 0.1rem 0.2rem black;
+  box-shadow: 0.3rem 0.3rem black;
 }
