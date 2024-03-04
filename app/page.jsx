@@ -1,6 +1,8 @@
 import AboutUs from "./components/about-us";
+import Faq from "./components/faq/faq";
 import Carousel from "./components/carousel";
 import ProjectSection from "./components/project-section";
+import faqData from "./components/faq/FAQ.json";
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
       <Carousel />
       <ProjectSection />
       <AboutUs />
+      <Faq items={faqData}/>
     </main>
   );
 }
