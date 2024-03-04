@@ -403,3 +403,16 @@
     text-indent: 1.5rem;
     text-align: justify;
 }
+
+.como-chegar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.como-chegar__map {
+    width: 80%;
+    border: solid 0.25rem black;
+    box-shadow: 0.25rem 0.25rem black;
+    height: 40vh;
+}
