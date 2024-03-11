@@ -51,7 +51,8 @@ export default function ScheduleNav (sheetdata) {
     }
 
     return (
-        <div>
+        <div className="schedule__container">
+            <h1 className="schedule__title">CRONOGRAMA</h1>
             <div className="schedule">
                 <ScheduleNavItem date="22/04" dayWeek="SEG" onClick={handleClickSeg} selected={seg} />
                 <ScheduleNavItem date="23/04" dayWeek="TER" onClick={handleClickTer} selected={ter} />

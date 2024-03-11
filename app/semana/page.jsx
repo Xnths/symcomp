@@ -13,13 +13,12 @@ import Oferecimento from "../components/oferecimento";
 
 export default function Semana() {
     return (
-        <div>
+        <div className="semana">
             <Nav />
             <div id="inicio">
                 <Presentation />
             </div>
             <div id="cronograma">
-                <h1 className="cronograma__title">CRONOGRAMA</h1>
                 <ScheduleNav />
             </div>
             <div id="patrocinadores">
