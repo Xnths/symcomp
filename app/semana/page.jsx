@@ -6,8 +6,10 @@ import ScheduleNav from "../components/schedule-nav";
 import Presentation from "../components/presentation";
 import Patrocinadores from "../components/patrocinadores";  
 import About from "../components/about";
-import Faq from "../components/faq";
 import ComoChegar from "../components/como-chegar";
+import faqData from "../components/faq/FAQ-semana.json";
+import Faq from "../components/faq/faq";
+import Oferecimento from "../components/oferecimento";
 
 export default function Semana() {
     return (
@@ -27,11 +29,12 @@ export default function Semana() {
                 <About />
             </div>
             <div id="faq">
-                <Faq />
+                <Faq items={faqData} />
             </div>
             <div id="como-chegar">
                 <ComoChegar />
             </div>
+            <Oferecimento />
         </div>
     )
 }

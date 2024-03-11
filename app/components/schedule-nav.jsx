@@ -59,7 +59,7 @@ export default function ScheduleNav (sheetdata) {
                 <ScheduleNavItem date="25/04" dayWeek="QUI" onClick={handleClickQui} selected={qui} />
                 <ScheduleNavItem date="26/04" dayWeek="SEX" onClick={handleClickSex} selected={sex} />
             </div>
-            <div className="schedule-details">
+            <div className="schedule-details__container">
                 <div className="text-center text-black my-5">
                     Ninguém ainda :(
                 </div>
