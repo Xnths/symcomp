@@ -2,16 +2,26 @@
     {
         "key": 0,
         "title": "O que é a Semana da Computação?",
-        "body": "."
+        "body": "É um evento anual que reune professores, alunos e profissionais da área da computação para uma semana de palestras, workshops e networking."
     },
     {
         "key": 1,
-        "title": "Quem pode participar",
-        "body": "Qualquer aluno."
+        "title": "Quem pode participar do evento?",
+        "body": "O foco são os alunos da graduação, especialmente os ingressantes. No entanto, ele é aberto ao público interno e externo à USP."
     },
     {
         "key": 2,
-        "title": "Como participar",
-        "body": "Basta se inscrever."
+        "title": "Como faço para participar?",
+        "body": "Basta vir até o IME e entrar no local do evento. Fique de olho no início da página e na seção Como Chegar, pois é lá que deixamos o endereço e sala que a Semana irá acontecer. Não há necessidade de se inscrever para poder participar!"
+    },
+    {
+        "key": 3,
+        "title": "SOU PATROCINADOR. Como faço para patrocinar a Semana?",
+        "body": "O evento depende de patrocínio para acontecer. Todo o dinheiro é revertido em estrutura para engajar os alunos, tornando o evento um ambiente agradável e atraente para todos os envolvidos. Além disso, oferecemos benefícios para quem é patrocinador. Então, para saber mais sobre nossas cotas de patrocínio e seus detalhes basta clicar no botão 'QUERO PATROCINAR' da seção de Patrocinadores."
+    },
+    {
+        "key": 4,
+        "title": "SOU ALUNO. Como faço para ajudar na organização da Semana?",
+        "body": "Qualquer aluno de qualquer curso pode ser organizador da Semana da Computação. Não há necessidade de saber computação, pois temos várias frentes que cuidam dos diversos detalhes do eventos, como Equipe Financeira, Equipe de Desing, Equipe de Divulgação, Equipe Administrativa e muito mais. Portanto, se você está interessado em nos ajudar a realizar a Semana, basta clicar no botão 'QUERO PARTICIPAR!' da seção Quem Somos."
     }
 ]
