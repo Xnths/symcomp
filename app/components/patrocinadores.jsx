@@ -2,12 +2,21 @@ import "../styles/semana.css";
 import ItemPatrocinadorBox from "../atomic/item-patrocinador-box";
 
 export default function Patrocinadores () {
+    const sendEmail = () => {
+        const sendTo = "semanadacomputacao@ime.usp.br";
+        const subject = "[PATROCÍNIO] - ";
+    
+        const mailtoLink = `mailto:${sendTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+        window.location.href = mailtoLink;
+    }    
+
     return (
         <div className="patrocinadores">
             <p id="patrocinadores_title">PATROCINADORES</p>
             <p id="patrocinadores_text">Conheça os patrocinadores da XIV Semana de Computação IME USP:</p>
             <div className="patrocinadores_button">
-                <a href="#" target="_blank">
+                <a target="_blank" onClick={sendEmail}>
                     <button>QUERO PATROCINAR!</button>
                 </a>    
             </div>
