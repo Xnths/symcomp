@@ -19,7 +19,7 @@ export default function ItemNav (props) {
 
     return (
         <a 
-            className={props.selected ? 'nav__item nav__item-selected' : 'nav__item'}
+            className={props.selected ? 'button nav__item nav__item-selected' : 'button nav__item'}
             href={`#${props.navigateTo}`}
             onClick={handleClick}
         >

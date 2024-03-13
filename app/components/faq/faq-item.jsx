@@ -13,9 +13,9 @@ export default function FaqItem({ title, children }) {
 
     return (
         <div className="flex flex-col gap-3">
-            <div className={`flex items-center justify-between py-5 px-10 font-bold text-black border-[3px] border-black ${isTopicOpen ? 'bg-pink' : 'bg-yellow'} hover:cursor-pointer button-shadow transition-all duration-500`}  onClick={openTopic}>
+            <div className={`flex items-center justify-between py-5 px-10 font-semibold text-black border-[3px] border-black ${isTopicOpen ? 'bg-pink' : 'bg-yellow'} hover:cursor-pointer button-shadow transition-all duration-500`}  onClick={openTopic}>
                 <div className="flex flex-1">
-                    <h1 className={`md:text-xl transition duration-500 ease-in-out ${isTopicOpen ? 'text-white' : 'text-black'}`}>
+                    <h1 className={`text-xl transition duration-500 ease-in-out ${isTopicOpen ? 'text-white' : 'text-black'}`}>
                         {title}
                     </h1>
                 </div>
