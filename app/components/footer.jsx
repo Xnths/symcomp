@@ -14,10 +14,10 @@ export default function Footer() {
                     OFERECIMENTO
                 </h1>
                 
-                <div className="flex items-center justify-between w-full px-8 max-w-[800px]">
-                    <UspLogo className="h-10 w-fit md:h-20"/>
-                    <SymCompLogo className="h-10 w-fit md:h-20"/>
-                    <ImeLogo className="h-10 w-fit md:h-20"/>
+                <div className="flex items-center justify-between w-full max-w-[1000px]">
+                    <UspLogo className="w-auto h-11 md:h-20"/>
+                    <SymCompLogo className="w-auto h-11 md:h-20"/>
+                    <ImeLogo className="w-auto h-11 md:h-20"/>
                 </div>
 
                 <div className="flex flex-col self-center w-full gap-5">
@@ -25,10 +25,10 @@ export default function Footer() {
 
                     <div className="flex items-center justify-start gap-5">
                         <a href="https://instagram.com/symcomp.imeusp" target="_blank">
-                            <ItemInstaIcon fillColor="#fff" className="w-8 h-8 md:h-11 md:w-11"/>
+                            <ItemInstaIcon fillColor="#fff" className="w-auto h-8 md:h-11"/>
                         </a>
                         <a href="https://www.linkedin.com/company/symcompimeusp" target="_blank">
-                            <ItemIconLikedin fillColor="#fff" className="w-8 h-8 md:h-11 md:w-11"/>
+                            <ItemIconLikedin fillColor="#fff" className="w-auto h-7 md:h-10"/>
                         </a>
                     </div>
                 </div>
