@@ -3,6 +3,7 @@ import Faq from "./components/faq/faq";
 import Carousel from "./components/carousel";
 import ProjectSection from "./components/project-section";
 import faqData from "./components/faq/FAQ.json";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ProjectSection />
       <AboutUs />
       <Faq items={faqData}/>
+      <Footer />
     </main>
   );
 }
