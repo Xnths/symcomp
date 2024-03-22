@@ -1,27 +1,28 @@
-// import { google } from "googleapis"
-// import gCredentials from "./g-credentials"
+'use server'
 
-export async function getEventSchedule (req, res) {
-    // try {
-    //     const client = new google.auth.JWT(
-    //         gCredentials.client_mail, null, gCredentials.private_key, ["https://www.googleapis.com/auth/spreadsheets"]
-    //     );
-        
-    //     client.authorize(async function (err, tokens) {
-    //         if (err) {
-    //             return res.status(400).send(JSON.stringify({error: true}));
-    //         }
+import { google } from "googleapis"
 
-    //         const gsapi = google.sheets({version: "v4", auth: client});
-    //         const opt = {
-    //             spreadsheetId: process.env.SPREADSHEET_ID,
-    //             range: "Data!A2:A4"
-    //         }
+export async function getEventSchedule() {
+    const glAuth = await google.auth.getClient({
+        projectId: process.env.GOOGLE_PROJECT_ID,
+        credentials: {
+            "type": "service_account",
+            "project_id": process.env.GOOGLE_PROJECT_ID,
+            "private_key_id": process.env.GOOGLE_PRIVATE_KEY_ID,
+            "private_key": process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, "\n"),
+            "client_email": process.env.GOOGLE_CLIENT_EMAIL,
+            "client_id": process.env.GOOGLE_CLIENT_ID,
+            "universe_domain": "googleapis.com"
+        },
+        scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+    });
 
-    //         let data = await gsapi.spreadsheets.values.get(opt);
-    //         return res.status(200).send(JSON.stringify({error: false, data: data.values}));
-    //     })
-    // } catch (e) {
-    //     return res.status(200).send(JSON.stringify({error: true, message: e.message}));
-    // }
+    const glSheets = google.sheets({ version: "v4", auth: glAuth });
+
+    const data = await glSheets.spreadsheets.values.get({
+        spreadsheetId: process.env.GOOGLE_SHEET_ID,
+        range: 'A2:F8',
+    });
+
+    return { data: data.data.values };
 }

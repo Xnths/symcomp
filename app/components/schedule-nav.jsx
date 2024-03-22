@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ItemNav from "../atomic/item-nav";
 import ScheduleNavItem from "../atomic/schedule-nav-item";
 import { getEventSchedule } from "../api/driveCrawler";
@@ -61,7 +61,7 @@ export default function ScheduleNav (sheetdata) {
                 <ScheduleNavItem date="26/04" dayWeek="SEX" onClick={handleClickSex} selected={sex} />
             </div>
             <div className="schedule-details__container">
-                <div className="text-center text-black my-5">
+                <div className="my-5 text-center text-black">
                     Ninguém ainda :(
                 </div>
             </div>
