@@ -5,25 +5,28 @@ import React from "react";
  * @param {Object} props - The component's properties.
  * @param {boolean} props.onAir - Attribute true if the presenatation is happening right now or false otherwise.
  * @param {string} props.time - Presentation's time in the format "hh:mm - hh:mm".
+ * @param {string} props.theme - Presentation's theme.
+ * @param {string} props.title - Presentation's title.
+ * @param {string} props.lecturer - Presentation's lecturer.
  * @returns {JSX.Element} Atomic schedule item containing the presentation briefs.
  */
-export default function ScheduleDetailsItem () {
+export default function ScheduleDetailsItem (props) {
     return (
-        <div>
+        <div className="flex flex-col w-full">
             <div>
-                MACHINE LEARNING
+                Tema: {props.theme}
             </div>
             <div>
                 <div>
-                    <img />
+                    Foto: <img />
                 </div>
-                <div>
-                    <span>Alinhando Grandes Modelos de Linguagem (LLMs) a Valores e Políticas: Tecnologias e Desafios</span>
-                    <span>BEYONCÉ</span>
+                <div className="flex flex-col">
+                    <span>Título: {props.title}</span>
+                    <span>Palestrante: {props.lecturer}</span>
                 </div>
             </div>
             <div>
-                14:00 - 15:00
+                Horário: {props.time}
             </div>
         </div>
     )

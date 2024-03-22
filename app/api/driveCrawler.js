@@ -21,7 +21,7 @@ export async function getEventSchedule() {
 
     const data = await glSheets.spreadsheets.values.get({
         spreadsheetId: process.env.GOOGLE_SHEET_ID,
-        range: 'A2:F8',
+        range: 'Infos!A2:J25',
     });
 
     return { data: data.data.values };
