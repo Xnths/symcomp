@@ -13,7 +13,7 @@ export default function Patrocinadores () {
 
     return (
         <div className="patrocinadores">
-            <p id="patrocinadores_title">PATROCINADORES</p>
+            <p id="patrocinadores_title" className="titles">PATROCINADORES</p>
             <p id="patrocinadores_text">Conheça os patrocinadores da XIV Semana de Computação IME USP:</p>
             <div className="patrocinadores_button">
                 <a target="_blank" onClick={sendEmail}>
