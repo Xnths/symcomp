@@ -20,20 +20,15 @@ export default function Patrocinadores () {
                     <button>QUERO PATROCINAR!</button>
                 </a>    
             </div>
-            <div className="text-white">
-                Ninguém ainda :(
-            </div>
             <div className="patrocinadores_cota">
-                {/* <ItemPatrocinadorBox backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Panda" imgPath="../../public/logo_ime_preta.png"/>
+                <ItemPatrocinadorBox  patrocinadorSite="https://www.incognia.com/pt/" backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Incognia" imgPath="/logos/patrocinadores/logo_incognia.png"/>
+
+                <ItemPatrocinadorBox patrocinadorSite="https://www.opus-software.com.br/" backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Opus Software" imgPath="/logos/patrocinadores/logo_opus.png"/>
+
+                <ItemPatrocinadorBox patrocinadorSite="https://www.iryasolutions.com.br/" backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Irya Solutions" imgPath="/logos/patrocinadores/logo_irya.png"/>
 
 
-                <ItemPatrocinadorBox backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Polar"/>
-                
-                <ItemPatrocinadorBox backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Pardo"/>
-
-                <ItemPatrocinadorBox backgroundColor="var(--bg-silver)" cotaPatrocinio="PRATA" patrocinadorName="Google"/>
-
-                <ItemPatrocinadorBox backgroundColor="var(--bg-bronze)" cotaPatrocinio="BRONZE" patrocinadorName="16 CARRIAGES"/> */}
+                {/**/}
             </div>
         </div>
     )
