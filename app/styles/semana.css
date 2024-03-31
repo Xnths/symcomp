@@ -19,7 +19,7 @@
     width: fit-content;
     border: solid 0.4rem black;
     text-align: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .nav {
@@ -28,11 +28,14 @@
     justify-content: flex-start;
     background-color: var(--bg-pink);
     padding: 1rem 1.4rem;
+    overflow-x: scroll;
 }
 
 .nav__item {
     background-color: white;
+    white-space: nowrap;
 }
+
 
 .nav__item-selected {
     background-color: var(--bg-pink);
@@ -273,7 +276,7 @@
     width: 0.5rem;
     border: solid 0.4rem black;
     text-align: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
     line-height: 1;
     transition: background 500ms;
 }
@@ -321,11 +324,13 @@
     }
 }
 
-#patrocinadores_title {
+.titles {
     font-size: 2.25rem;
     font-weight: 500;
-    margin-bottom: 0.5rem;
+}
 
+#patrocinadores_title {
+    margin-bottom: 0.5rem;
 }
 
 #patrocinadores_text {
@@ -356,12 +361,14 @@
 }
 
 .patrocinadores_patrocinadorbox {
+    position: relative;
     display: flex;
     width: 8.75rem;
     height: 8.75rem;
-    background-color: white;
     border: 0.25rem solid black;
+    background-color: white;
     box-shadow: 0.25rem 0.25rem black;
+
 }
 
 .patrocinadores_patrocinadorname {
@@ -370,7 +377,6 @@
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    /* background-color: blue; */
     height: 2.5rem;
     margin-top: 0.3rem;
 }
@@ -400,6 +406,17 @@
     color: white;
     font-size: 1.2rem;
     font-weight: 800;
+    z-index: 1000;
+}
+
+.patrocinadores_patrocinadorbox_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    max-width: 7.2rem;
+    max-height: 7.2rem;
 }
 
 .about {
@@ -479,12 +496,7 @@
 
 @media (min-width: 800px) and (max-width: 1350px) {
     .nav {
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        overflow-x: scroll;
-        background-color: var(--bg-pink);
-        padding: 1rem 1.4rem;
         overflow-x: scroll;
     }
 
@@ -499,16 +511,6 @@
 }
 
 @media (max-width: 800px) {
-    .nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        overflow-x: scroll;
-        background-color: var(--bg-pink);
-        padding: 1rem 1.4rem;
-    }
-    
-    
     .nav__item {
         display: flex;
         justify-content: center;
@@ -521,8 +523,6 @@
         width: fit-content;
         border: solid 0.4rem black;
         text-align: center;
-        text-wrap: nowrap;
-        background-color: white;
     }
     
     .nav__item-selected {
@@ -560,7 +560,7 @@
         width: 0.5rem;
         border: solid 0.4rem black;
         text-align: center;
-        text-wrap: nowrap;
+        white-space: nowrap;
         line-height: 1;
     }
     
@@ -588,7 +588,8 @@
         align-items: center;
         align-content: center;
         background-color: var(--bg-pink);
-        height: calc(100vh - 6.9rem);
+        height: calc(100vh - 7rem);
+        min-height: 700px;
         width: 100vw;
     }
     
@@ -601,7 +602,6 @@
         width: 100vw;
         height: 21.3rem;
         background-color: var(--bg-pink);
-        /* border: 1px solid var(--bg-dark-blue); */
     }
     
     .presentation__logo_ball {
@@ -616,7 +616,7 @@
     .presentation__logo_rectangle {
         position: absolute;
         z-index: 1;
-        height: 5.5rem;
+        height: 6.5rem;
         background-color: var(--bg-dark-blue);
 
         width: 100vw;
@@ -634,25 +634,21 @@
         font-style: italic;
         font-weight: 700;
         text-align: left;
-        /* border: 1px solid var(--bg-dark-blue); */
     }
     
     #presentation_logo_title_semana {
-        /* background-color: rgba(0, 128, 0, 0.233); */
         font-size: 5.5rem;
         color: var(--bg-yellow);
         line-height: 0.5;
     }
     
     #presentation_logo_title_dacomp {
-        /* background-color: rgba(128, 0, 128, 0.404); */
         font-size: 3.5rem;
         color: var(--bg-orange);
         line-height: 1.2;
     }
     
     #presentation_logo_title_edition {
-        /* background-color: rgba(0, 0, 255, 0.349); */
         font-size: 3rem;
         color: var(--bg-pink);
         position: relative;
@@ -791,103 +787,8 @@
     /* ---------------------- */
     
     /* STYLE PATROCINADORES */
-    
-    .patrocinadores {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--bg-dark-blue);
-        padding-top: 5rem;
-        padding-bottom: 10rem;
-        height: fit-content;
-        
-        > p {
-            color: white;
-            text-align: center;
-        }
-    }
-    
-    #patrocinadores_title {
-        font-size: 2.25rem;
-        font-weight: 500;
-        margin-bottom: 0.5rem;
-    
-    }
-    
-    #patrocinadores_text {
-        font-size: 1.2rem;
-        font-weight: 300;
-        padding: 0rem 1rem 2rem 1rem;
-    }
-    
-    .patrocinadores_button {
-        display: flex;
-        background-color: var(--bg-yellow);
-        height: 3.3rem;
-        width: 14rem;
-        align-items: center;
-        justify-content: center;
-        border: 0.25rem solid black;
-        box-shadow: 0.25rem 0.25rem black;
-    
-        color: var(--bg-dark-blue);
-        font-weight: 700;
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    
-        &:hover {
-            background-color: var(--bg-pink);
-            cursor: pointer;
-        }
-    }
-    
-    .patrocinadores_patrocinadorbox {
-        display: flex;
-        width: 8.75rem;
-        height: 8.75rem;
-        background-color: white;
-        border: 0.25rem solid black;
-        box-shadow: 0.25rem 0.25rem black;
-    }
-    
-    .patrocinadores_patrocinadorname {
-        font-size: 1.3rem;
-        color: white;
-        font-weight: 500;
-        text-transform: uppercase;
-        text-align: center;
-        /* background-color: blue; */
-        height: 2.5rem;
-        margin-top: 0.3rem;
-    }
-    
-    .patrocinadores_cota {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        > div {
-            margin: 2.5rem 1.2rem 0rem 1.2rem;
-        }
-    }
-    
-    
-    .patrocinadores_patrocinadorbox_label {
-        position: relative;
-        display: flex;
-        height: 2rem;
-        width: 4.8rem;
-        border: 0.125rem solid black;
-        box-shadow: 0.25rem 0.25rem black;
-        top: -1rem;
-        right: -0.5rem;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 800;
-    }
+    /* Não precisa de atualizações */
+
     
     .about {
         display: flex;

@@ -1,10 +1,13 @@
 import FaqItem from "./faq-item";
+import "../../styles/semana.css";
 
 export default function Faq({ items }) {
     return (
         <div className="flex flex-col items-center w-full gap-10 px-5 py-16 overflow-hidden md:gap-16 bg-blue">
             <h1 className="text-4xl font-bold text-center text-white">
-                FAQ
+                <p className="titles">
+                    FAQ
+                </p>
             </h1>
             <div className="flex flex-col w-full gap-6 max-w-[800px]">
                 {items.map(item => (

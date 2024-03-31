@@ -20,7 +20,7 @@ export default function ScheduleNav ({ sheetdata }) {
 
     return (
         <div className="schedule__container">
-            <h1 className="schedule__title">CRONOGRAMA</h1>
+            <h1 className="schedule__title"><p className="titles">CRONOGRAMA</p></h1>
             <div className="schedule">
                 {days.map((day) => (
                     <ScheduleNavItem 
