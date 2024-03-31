@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ItemNav from "../atomic/item-nav";
 import ScheduleNavItem from "../atomic/schedule-nav-item";
 import ScheduleDetailsItem from "../atomic/schedule-details-item";
+import { CgCoffee } from "react-icons/cg"
 
 export default function ScheduleNav ({ sheetdata }) {
     const [activeDay, setActiveDay] = useState('SEG');
@@ -51,6 +52,12 @@ export default function ScheduleNav ({ sheetdata }) {
                         }
                     })
                 }
+                <div className="flex flex-col items-center w-screen px-4 ">
+                        <div className="flex flex-row space-x-4 lg:w-[600px] w-full border-4 border__shadow px-8 py-4 text-left bg-primary">
+                            <CgCoffee size={64} className="text-white" />
+                            <span className="text-6xl font-bold text-center text-white">COFFEE BREAK</span>
+                        </div>
+                    </div>
             </div>
         </div>
     )
