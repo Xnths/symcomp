@@ -1,7 +1,8 @@
-import { Drawer, DrawerHeader, DrawerContent, DrawerTrigger, DrawerTitle, DrawerDescription } from "@/components/ui/drawer";
-import { Dialog, DialogHeader, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+
 import { useMediaQuery } from "@mui/material";
 import React from "react";
+import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "../../components/ui/drawer";
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "../../components/ui/dialog";
 
 /**
  * Component to display a navigation item given a section it should direct the user to.
