@@ -19,3 +19,22 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Deploying project
+
+Access the machine via ssh key. For that use:
+
+```bash
+ssh <user>@symcomp.ime.usp.br
+```
+
+Within the machine, access the folder where the site files are. For more information consult the techical members. To make the deploy, you must make sure the main branch is updated. Then, execute the following commands:
+
+```bash
+sudo docker exec -it 120d50346564 /bin/bash (esse id é o do container q ta rodando)
+git pull
+yarn
+yarn build
+exit
+sudo docker restart 120d50346564
+```
