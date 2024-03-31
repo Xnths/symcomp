@@ -27,7 +27,7 @@ export default function Patrocinadores () {
 
                 <ItemPatrocinadorBox patrocinadorSite="https://www.iryasolutions.com.br/" backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="Irya Solutions" imgPath="/logos/patrocinadores/logo_irya.png"/>
 
-
+                <ItemPatrocinadorBox patrocinadorSite="https://brickseguros.com.br/" backgroundColor="var(--bg-gold)" cotaPatrocinio="OURO" patrocinadorName="brick" imgPath="/logos/patrocinadores/logo_brick.png"/>
                 {/**/}
             </div>
         </div>
