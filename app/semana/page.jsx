@@ -18,7 +18,9 @@ export default function Semana() {
             <div id="inicio">
                 <Presentation />
             </div>
-            <ScheduleNavWrapper />
+            <div id="cronograma">
+                <ScheduleNavWrapper />
+            </div>
             <div id="patrocinadores">
                 <Patrocinadores />
             </div>

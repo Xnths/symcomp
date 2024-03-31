@@ -1,3 +1,8 @@
+.border__shadow {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    border: solid 0.4rem black;
+}
+
 .semana {
     width: 100vw;
 }

@@ -32,21 +32,20 @@ export default function ScheduleNav ({ sheetdata }) {
                     />
                 ))}
             </div>
-            <div className="flex flex-col gap-5 schedule-details__container">
-                {/* <div className="my-5 text-center text-black">
-                    Ninguém ainda :(
-                </div> */}
+            <div className="flex flex-col gap-5 items-center schedule-details__container w-3/5">
                 {sheetdata &&
 
                     sheetdata.map((item, index) => {
-                        if (item[0] === activeDay) {
+                        if (item[0] === activeDay && item[2] != "-") {
                             return (
                                 <ScheduleDetailsItem 
                                     key={index} 
                                     time={item[1]} 
-                                    theme="Palestra" 
+                                    theme="Palestra"
+                                    description={item[3]}
                                     title={item[2]} 
                                     lecturer={item[4]}
+                                    aboutLecturer={item[5]}
                                 />
                             )
                         }
