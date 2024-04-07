@@ -42,15 +42,6 @@
     color: white;
 }
 
-.presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    background-color: var(--bg-pink);
-    height: calc(100vh - 6.9rem);
-}
-
 .presentation__logo {
     display: flex;
     justify-content: center;
