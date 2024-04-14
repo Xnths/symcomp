@@ -3,6 +3,7 @@ import ItemNav from "../atomic/item-nav";
 import ScheduleNavItem from "../atomic/schedule-nav-item";
 import ScheduleDetailsItem from "../atomic/schedule-details-item";
 import { CgCoffee } from "react-icons/cg"
+import NewScheduleBox from "../atomic/new-schedule-box";
 
 export default function ScheduleNav ({ sheetdata }) {
     const [activeDay, setActiveDay] = useState('SEG');
@@ -39,25 +40,29 @@ export default function ScheduleNav ({ sheetdata }) {
                     sheetdata.map((item, index) => {
                         if (item[0] === activeDay && item[2] != "-") {
                             return (
-                                <ScheduleDetailsItem 
-                                    key={index} 
-                                    time={item[1]} 
-                                    theme="Palestra"
-                                    description={item[3]}
-                                    title={item[2]} 
-                                    lecturer={item[4]}
-                                    aboutLecturer={item[5]}
-                                />
+                                // Carrega as palestras do dia!
+                                <div>
+                                    <NewScheduleBox
+                                        key={index}
+                                        time={item[1]}
+                                        theme="Palestra"
+                                        description={item[3]}
+                                        title={item[2]}
+                                        lecturer={item[4]}
+                                        aboutLecturer={item[5]}
+                                        ImgPath={item[4]}
+                                    />
+                                </div>
                             )
                         }
                     })
                 }
                 <div className="flex flex-col items-center w-screen px-4 ">
-                        <div className="flex flex-row items-center justify-center space-x-4 lg:w-[600px] w-full border-4 border__shadow px-8 py-4 text-left bg-primary">
-                            <CgCoffee size={64} className="text-white" />
-                            <span className="text-6xl font-bold text-center text-white">COFFEE BREAK</span>
-                        </div>
+                    <div className="flex flex-row items-center justify-center space-x-4 lg:w-[600px] w-full border-4 border__shadow px-8 py-4 text-left bg-primary">
+                        <CgCoffee size={64} className="text-white" />
+                        <span className="text-6xl font-bold text-center text-white">COFFEE BREAK</span>
                     </div>
+                </div>
             </div>
         </div>
     )

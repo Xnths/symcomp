@@ -229,6 +229,84 @@
     }
 }
 
+#newschedule__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newschedule__schedulebox {
+    position: relative;
+    color: black;
+    display: flex;
+    height: fit-content;
+    min-height: 15rem;
+    border: 6px solid var(--bg-dark-blue);
+    margin: 1.5rem; 
+    padding: 1.5rem; 
+    width: 56rem;
+    align-self: center;
+    
+    > img {
+        display: flex;
+        align-self: center;
+        width: 9rem;
+        height: 9rem;
+        object-fit: cover;
+        border: 3px solid var(--bg-dark-blue);
+        box-shadow: 0.25rem 0.25rem black;
+    }
+}
+
+#newschedule__fulltitle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#newschedule__title {
+    display: flex;
+    font-size: 2.25rem; 
+    line-height:normal;
+    margin: 0rem 2rem;
+    font-weight: 700; 
+}
+
+#newschedule__lecturer{
+    display: flex;
+    font-size: 2rem; 
+    margin: 0rem 2rem;
+    font-weight: 400; 
+}
+
+.newschedule__buttons {
+    position: absolute;
+    display: flex;
+    height: 3rem;
+    width: 8rem;
+    border: 0.125rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+    bottom: -1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+    align-self: last baseline;
+    background-color: var(--bg-yellow);
+}
+
+#newschedule__time {
+    left: 31rem;
+}
+
+#newschedule__saibamais {
+    left: 19rem; 
+    width: 10rem; 
+    background-color: var(--bg-pink);
+}
+
+
 .schedule__container {
     display: flex;
     flex-direction: column;
@@ -499,6 +577,11 @@
         padding: 1rem 1.4rem;
         width: 60vw;
     }
+
+    #newschedule__schedulebox {
+        width: 42rem;
+        /* background-color: green; */
+    }
 }
 
 @media (max-width: 800px) {
@@ -529,6 +612,11 @@
         font-weight: 500;
     }
     
+    #newschedule__schedulebox {
+        width: 40rem;
+        /* background-color: pink; */
+    }
+
     .schedule {
         display: flex;
         flex-direction: row;
@@ -655,7 +743,7 @@
         justify-content: center;
         min-width: 200px;
         height: 7.3rem;
-        background-color: var(--bg-pink);
+        /* background-color: var(--bg-pink); */
     }
     
     .presentation__eventinfos_date{
@@ -773,6 +861,7 @@
             width: 3rem;
         }
     }
+
     
     
     /* ---------------------- */
