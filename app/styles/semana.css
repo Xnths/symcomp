@@ -803,40 +803,4 @@
         height: 40vh;
     }
     
-    .symcomp-signature__logo {
-        width: 5rem;
-        margin: 0 0.5rem 0 0;
-    }
-    
-    .symcomp-signature__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .symcomp-signature__title {
-        font-size: 3rem;
-        font-weight: bolder;
-        color: var(--bg-pink);
-        line-height: 2.5rem;
-    }
-    
-    .symcomp-signature__subtitle {
-        font-size: 1.5rem;
-        color: white;
-    }
-    
-    .oferecimento__container {
-        background-color: #1B1B1B;
-        padding: 4rem 0;
-    }
-    
-    .oferecimento__title {
-        font-size: 2rem;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        margin: 0 0 4rem 0;
-    }
 }
