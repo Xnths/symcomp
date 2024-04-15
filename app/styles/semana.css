@@ -229,11 +229,20 @@
     }
 }
 
+/*
+
+NEW SCHEDULE
+NEW SCHEDULE
+NEW SCHEDULE
+
+*/
+
 #newschedule__container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 #newschedule__schedulebox {
@@ -241,18 +250,18 @@
     color: black;
     display: flex;
     height: fit-content;
-    min-height: 15rem;
     border: 6px solid var(--bg-dark-blue);
     margin: 1.5rem; 
-    padding: 1.5rem; 
-    width: 56rem;
     align-self: center;
+    width: 100%;
+    max-width: 60rem;
+    padding: 2rem; 
     
     > img {
         display: flex;
         align-self: center;
-        width: 9rem;
-        height: 9rem;
+        width: 10rem;
+        height: 10rem;
         object-fit: cover;
         border: 3px solid var(--bg-dark-blue);
         box-shadow: 0.25rem 0.25rem black;
@@ -263,18 +272,24 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    > div {
+        line-height: 2.5rem;
+    }
 }
+
 #newschedule__title {
     display: flex;
-    font-size: 2.25rem; 
-    line-height:normal;
+    font-size: 2.5rem; 
     margin: 0rem 2rem;
-    font-weight: 700; 
+    font-weight: 600; 
+    padding-bottom: 0.4rem;
+    max-width: 40rem;
 }
 
 #newschedule__lecturer{
     display: flex;
-    font-size: 2rem; 
+    font-size: 1.8rem; 
+    line-height: 1.8rem !important;
     margin: 0rem 2rem;
     font-weight: 400; 
 }
@@ -283,29 +298,30 @@
     position: absolute;
     display: flex;
     height: 3rem;
-    width: 8rem;
+    min-width: 10rem;
+    width: fit-content;
     border: 0.125rem solid black;
     box-shadow: 0.25rem 0.25rem black;
     bottom: -1.5rem;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 800;
     align-self: last baseline;
-    background-color: var(--bg-yellow);
+    padding: 0 0.5rem;
 }
 
 #newschedule__time {
-    left: 31rem;
+    background-color: var(--bg-yellow);
+    left: 48rem;
 }
 
 #newschedule__saibamais {
-    left: 19rem; 
-    width: 10rem; 
     background-color: var(--bg-pink);
+    width: 11rem;
+    left: 36rem; 
 }
-
 
 .schedule__container {
     display: flex;
@@ -575,12 +591,26 @@
         justify-content: space-between;
         overflow-x: scroll;
         padding: 1rem 1.4rem;
-        width: 60vw;
+        width: 100vw;
+        background-color: pink;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    #newschedule__lecturer{
+        margin-bottom: 1rem;
     }
 
-    #newschedule__schedulebox {
-        width: 42rem;
-        /* background-color: green; */
+    
+    #newschedule__time {
+        background-color: var(--bg-yellow);
+        left: 55%;
+    }
+    
+    #newschedule__saibamais {
+        background-color: var(--bg-pink);
+        width: 11rem;
+        left: 28%; 
     }
 }
 
@@ -603,18 +633,63 @@
         background-color: var(--bg-pink);
         color: white;
     }
-    
-    .schedule__title {
-        text-align: center;
-        margin: 3.5rem 0 1rem 0;
-        font-size: 1.8rem;
-        color: var(--bg-dark-blue);
-        font-weight: 500;
+
+    /*
+
+    NEW SCHEDULE
+    NEW SCHEDULE
+    NEW SCHEDULE
+    NEW SCHEDULE
+    NEW SCHEDULE
+    NEW SCHEDULE
+    NEW SCHEDULE
+    NEW SCHEDULE
+    NEW SCHEDULE
+
+    */
+
+    #newschedule__container {
+        width: 100%;
     }
     
     #newschedule__schedulebox {
-        width: 40rem;
-        /* background-color: pink; */
+        margin: 1.5rem; 
+        padding: 1.5rem 0.5rem 3rem 0.5rem; 
+        flex-direction: column;
+        
+        > img {
+            padding: 0.2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    #newschedule__fulltitle {
+        > div {
+            line-height: 2rem;
+        }
+    }
+    #newschedule__lecturer {
+        padding-bottom: 0.5rem;
+        font-size: 1.8rem !important;
+    }
+
+    #newschedule__title {
+        padding-bottom: 0.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .newschedule__buttons {
+        min-width: 8rem;
+    }
+
+    #newschedule__time {
+        left: 12rem;
+    }
+    #newschedule__saibamais {
+        left: 1rem; 
+        width: 10rem;
+        background-color: var(--bg-pink);
     }
 
     .schedule {

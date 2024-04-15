@@ -34,9 +34,8 @@ export default function ScheduleNav ({ sheetdata }) {
                     />
                 ))}
             </div>
-            <div className="flex flex-col gap-5 items-center schedule-details__container w-3/5">
+            <div>
                 {sheetdata &&
-
                     sheetdata.map((item, index) => {
                         if (item[0] === activeDay && item[2] != "-") {
                             return (
@@ -50,7 +49,7 @@ export default function ScheduleNav ({ sheetdata }) {
                                         title={item[2]}
                                         lecturer={item[4]}
                                         aboutLecturer={item[5]}
-                                        ImgPath={item[4]}
+                                        ImgPath={item[6]}
                                     />
                                 </div>
                             )

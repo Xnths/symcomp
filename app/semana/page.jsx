@@ -36,9 +36,9 @@ export default function Semana() {
       <div id="cronograma">
         <ScheduleNavWrapper />
       </div>
-      <div>
+      {/* <div>
         <ScheduleNav sheetdata={fakeSheetdata}></ScheduleNav>
-      </div>
+      </div> */}
       <div id="patrocinadores">
         <Patrocinadores />
       </div>
