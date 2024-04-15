@@ -689,6 +689,10 @@ NEW SCHEDULE
         left: 1rem; 
         width: 10rem;
         background-color: var(--bg-pink);
+
+        > p {
+            padding-right: 4px;
+        }
     }
 
     .schedule {
