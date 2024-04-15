@@ -234,7 +234,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 50vw;
     flex-direction: column;
     padding: 1.2rem;
 }
@@ -308,13 +308,13 @@
 
 #newschedule__time {
     background-color: var(--bg-yellow);
-    left: 48rem;
+    left: 30rem;
 }
 
 #newschedule__saibamais {
     background-color: var(--bg-pink);
     width: 11rem;
-    left: 36rem; 
+    left: 18rem; 
 }
 
 #newschedule__about {
@@ -359,12 +359,9 @@
 
 .schedule {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     justify-content: center;
-    padding: 1rem 1.4rem;
-    width: 50vw;
+    align-items: center;
+    width: 100%;
 }
 
 .schedule__nav-item {
