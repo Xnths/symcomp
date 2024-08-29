@@ -1,0 +1,20 @@
+import { ReactNode } from "react"
+
+import { cn } from "@/lib/utils"
+
+interface TitleProps {
+    children: ReactNode
+    color: "yellow" | "pink"
+}
+
+export const Title = ({children, color}: TitleProps) => {
+    return (
+        <h2 className={
+            cn(
+                "font-extrabold  text-2xl px-[50px] py-[10px] shadow-solid w-fit border-4 border-black",
+                color === "pink" ? "text-white bg-primary" : "",
+                color === "yellow" ? "text-black bg-secondary" : ""
+            )
+        }>{children}</h2>
+    )
+}

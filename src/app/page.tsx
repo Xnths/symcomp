@@ -1,5 +1,6 @@
 import { HomeHeader } from "@/components/home/header";
 import { HeroSection } from "@/components/home/hero-section";
+import { Title } from "@/components/ui/title";
 
 export default function Home() {
   return (
@@ -7,9 +8,7 @@ export default function Home() {
       <HomeHeader />
       <div className="mt-[100px] h-full w-full">
         <HeroSection />
-        <div>
-          alguma outra coisa
-        </div>
+        <Title color="pink">Teste</Title>
       </div>
     </main>
   );
