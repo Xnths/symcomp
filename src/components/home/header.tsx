@@ -11,10 +11,6 @@ export const HomeHeader = () => {
         {
             label: 'Quem somos',
             href: 'about'
-        },
-        {
-            label: 'FAQ',
-            href: 'faq'
         }
     ]
     
@@ -23,7 +19,7 @@ export const HomeHeader = () => {
             <span className="font-extrabold text-4xl text-primary">SYMCOMP</span>
             <nav className="flex flex-row gap-4">
                 {sections.map(section => (
-                   <a className="font-bold px-[48px] py-2 transition-colors hover:bg-primary hover:text-white border-4 shadow-solid border-black bg-white" key={section.href} href={section.href}>{section.label.toUpperCase()}</a> 
+                   <a className="font-bold px-[48px] py-2 transition-colors hover:bg-primary hover:text-white border-4 shadow-solid border-black bg-white" key={section.href} href={`#${section.href}`}>{section.label.toUpperCase()}</a> 
                 ))}
             </nav>
         </div>

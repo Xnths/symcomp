@@ -7,7 +7,7 @@ export const HeroSection = () => {
             icon: <SpeechIcon size={64} color="black" />
         },
         {
-            label: 'Encontros',
+            label: 'Networking',
             icon: <HandshakeIcon size={64} color="black" />
         },
         {
@@ -17,11 +17,11 @@ export const HeroSection = () => {
     ]
 
     return (
-        <div className="px-4 bg-background h-[calc(100vh-100px)]">
+        <div id="home" className="px-4 bg-background h-[calc(100vh-100px)]">
             <div className="flex flex-col justify-between items-center h-full py-[100px]">
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 w-2/3">
                     <h1 className="font-extrabold text-black text-4xl px-8 py-2 bg-secondary shadow-solid w-fit border-4 border-black">SIMPÓSIO DA COMPUTAÇÃO</h1>
-                    <p className="text-white text-2xl w-2/5">Organizando e realizando eventos sobre computação para a comunidade <strong>interna</strong> e <strong>externa</strong> à USP</p>
+                    <p className="text-white text-2xl w-2/5">Organizando eventos sobre computação, aproximando a comunidade <strong>interna</strong> e <strong>externa</strong> do curso de Bacharelado em Ciência da Computação da USP Butantã.</p>
                 </div>
                 <div className="flex flex-row w-full justify-center gap-10">
                     {highlights.map(highlight => (
