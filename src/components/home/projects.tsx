@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import { Button } from "../ui/button"
+import { CustomButton } from "../ui/custom-button"
 import { Title } from "../ui/title"
 
 export const Projects = () => {
@@ -20,7 +21,7 @@ export const Projects = () => {
     ]
     
     return (
-        <div className=" flex flex-col gap-6">
+        <div className="py-6 flex flex-col gap-6">
             <Title color="pink">CONHEÇA NOSSOS PROJETOS</Title>
             <div className="flex flex-row gap-8 items-center justify-center">
                 {projects.map(project => (
@@ -31,7 +32,7 @@ export const Projects = () => {
                             }
                         </div>
                         <p className="w-[256px]">{project.description}</p>
-                        <Button disabled className="font-extrabold py-2 shadow-solid mb-[5px] border-4 border-black">{project.label.toUpperCase()}</Button>
+                        <CustomButton disabled color="pink">{project.label.toUpperCase()}</CustomButton>
                     </div>
                 ))}
             </div>

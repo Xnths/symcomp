@@ -1,3 +1,4 @@
+import { AboutUs } from "@/components/home/about-us";
 import { HomeHeader } from "@/components/home/header";
 import { HeroSection } from "@/components/home/hero-section";
 import { Projects } from "@/components/home/projects";
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="mt-[100px] h-full w-full">
         <HeroSection />
         <Projects />
+        <AboutUs />
       </div>
     </main>
   );
