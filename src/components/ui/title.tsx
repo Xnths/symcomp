@@ -11,7 +11,7 @@ export const Title = ({children, color}: TitleProps) => {
     return (
         <h2 className={
             cn(
-                "font-extrabold  text-2xl px-[50px] py-[10px] shadow-solid w-fit border-4 border-black",
+                "font-extrabold  text-2xl px-[50px] py-[10px] shadow-solid w-full text-center border-4 border-black mb-[5px]",
                 color === "pink" ? "text-white bg-primary" : "",
                 color === "yellow" ? "text-black bg-secondary" : ""
             )

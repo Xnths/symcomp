@@ -1,5 +1,6 @@
 import { HomeHeader } from "@/components/home/header";
 import { HeroSection } from "@/components/home/hero-section";
+import { Projects } from "@/components/home/projects";
 import { Title } from "@/components/ui/title";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <HomeHeader />
       <div className="mt-[100px] h-full w-full">
         <HeroSection />
-        <Title color="pink">Teste</Title>
+        <Projects />
       </div>
     </main>
   );
