@@ -7,13 +7,15 @@ import { Title } from "@/components/ui/title";
 
 export default function Home() {
   return (
-    <main className="bg-white h-full w-full">
-      <HomeHeader />
-      <div className="mt-[100px] h-full w-full">
-        <HeroSection />
-        <Projects />
-        <AboutUs />
-        <Footer />
+    <main className="bg-white h-screen">
+      <div className="grid grid-rows-[auto,1fr] h-screen">
+        <HomeHeader />
+        <div className="h-full w-full overflow-auto">
+          <HeroSection />
+          <Projects />
+          <AboutUs />
+          <Footer />
+        </div>
       </div>
     </main>
   );
