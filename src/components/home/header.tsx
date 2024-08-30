@@ -1,4 +1,8 @@
+import { MenuIcon, MenuSquareIcon } from "lucide-react"
 import Image from "next/image"
+
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu"
+import { Navigation } from "../ui/navigation"
 
 export const HomeHeader = () => {
     const sections = [
@@ -21,11 +25,15 @@ export const HomeHeader = () => {
             <a href="#home">
                 <Image alt="Logo da Symcomp" src="/logo/symcomp.png" width={100} height={100} className="flex size-[60px]" />
             </a>
-            <nav className="flex flex-row gap-4">
-                {sections.map(section => (
-                   <a className="font-bold px-[48px] py-2 transition-colors hover:bg-primary hover:text-white border-4 shadow-solid border-black bg-white" key={section.href} href={`#${section.href}`}>{section.label.toUpperCase()}</a> 
-                ))}
-            </nav>
+            <DropdownMenu>
+                <DropdownMenuTrigger className="sm:hidden">
+                   <MenuIcon size={32} color="white" /> 
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="mr-6 p-8">
+                    <Navigation navItem={sections} />
+                </DropdownMenuContent>
+            </DropdownMenu>
+            <Navigation className="hidden sm:flex" navItem={sections} />
         </div>
     )
 }
