@@ -24,20 +24,22 @@ export const Projects = () => {
     return (
         <div id="projects" className="py-6 flex flex-col gap-6">
             <Title color="pink">CONHEÇA NOSSOS PROJETOS</Title>
-            <div className="flex flex-row gap-8 items-center justify-center">
-                {projects.map(project => (
-                    <div key={project.href} className="flex flex-col gap-4">
-                        <div className="size-[256px] rounded-full bg-secondary flex flex-row items-center justify-center">
-                            <Image height={100} width={100} alt={`Logo da ${project.label}`} src={project.imageUrl} />
+            <div className="w-full overflow-auto flex flex-row sm:items-center sm:justify-center">
+                <div className="flex px-4 py-[20px] sm:p-0 flex-row gap-8 items-center justify-center w-fit">
+                    {projects.map(project => (
+                        <div key={project.href} className="flex flex-col gap-4">
+                            <div className="size-[256px] rounded-full bg-secondary flex flex-row items-center justify-center">
+                                <Image height={100} width={100} alt={`Logo da ${project.label}`} src={project.imageUrl} />
+                            </div>
+                            <p className="w-[256px]">{project.description}</p>
+                            <CustomButton color="pink">
+                                <Link href={project.href}>
+                                    {project.label.toUpperCase()}
+                                </Link>
+                            </CustomButton>
                         </div>
-                        <p className="w-[256px]">{project.description}</p>
-                        <CustomButton color="pink">
-                            <Link href={project.href}>
-                                {project.label.toUpperCase()}
-                            </Link>
-                        </CustomButton>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     )
