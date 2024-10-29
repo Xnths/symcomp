@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function ByteCafe() {
     return (
-        <div>
+        <div className="bg-bc-white">
             ByteCafé
         </div>
     );
