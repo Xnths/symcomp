@@ -1,10 +1,4 @@
-import { AboutUs } from "@/components/home/about-us";
-import { Footer } from "@/components/home/footer";
-import { HomeHeader } from "@/components/home/header";
-import { HeroSection } from "@/components/home/hero-section";
-import { Projects } from "@/components/home/projects";
-import { Title } from "@/components/ui/title";
-
+import { BcHeader } from "@/components/bytecafe/header";
 
 import type { Metadata } from "next";
 
@@ -16,9 +10,10 @@ export const metadata: Metadata = {
 
 export default function ByteCafe() {
     return (
-        <div className="bg-bc-white font-mont">
-            ByteCafé - é um projeto muito legal
-            <p className="font-courier">Venha conhecer!</p>
+        <div className="flex flex-col justify-center items-center bg-bc-white font-mont">
+            <BcHeader />
+            {/* ByteCafé - é um projeto muito legal
+            <p className="font-courier">Venha conhecer!</p> */}
         </div>
     );
 }
