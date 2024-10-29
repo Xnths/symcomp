@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
 import { DEFAULT_CIPHERS } from "tls"
 
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -19,6 +20,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        courier: 'Courier Prime',
+        mont: 'Montserrat',
+        dm: 'DM Sans',
+      },
       boxShadow: {
         'solid': '5px 5px 0 0 black'
       },
