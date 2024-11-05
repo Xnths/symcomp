@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 interface NavItemProps {
     href: string
     label: string
+    classN?: string 
 }
 
-export const NavItem = ( { href, label }: NavItemProps) => {
+export const NavItem = ({ href, label, classN }: NavItemProps) => {
     const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
@@ -32,7 +33,7 @@ export const NavItem = ( { href, label }: NavItemProps) => {
 
     return (
         <a
-            className={`flex flex-row items-center justify-center font-bold px-[48px] py-2 transition-colors hover:bg-primary hover:text-white border-4 shadow-solid border-black ${isActive ? 'bg-primary text-white' : 'bg-white text-black'}`}
+            className={`flex flex-row items-center justify-center font-bold px-[48px] py-2 transition-colors hover:text-white border-4 shadow-solid border-black ${isActive ? 'bg-primary text-white' : 'bg-white text-black'} ${classN}`}
             href={`#${href}`}
         >
             {label.toUpperCase()}

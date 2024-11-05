@@ -8,15 +8,18 @@ export const HomeHeader = () => {
     const sections = [
         {
             label: 'Início',
-            href: 'home'
+            href: 'home',
+            classN: 'hover:bg-primary'
         },
         {
             label: 'Projetos',
-            href: 'projects'
+            href: 'projects',
+            classN: 'hover:bg-primary'
         },
         {
             label: 'Quem somos',
-            href: 'about'
+            href: 'about',
+            classN: 'hover:bg-primary'
         }
     ]
     
