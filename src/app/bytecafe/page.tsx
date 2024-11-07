@@ -12,8 +12,6 @@ export default function ByteCafe() {
     return (
         <div className="flex flex-col justify-center items-center bg-bc-white font-mont">
             <BcHeader />
-            {/* ByteCafé - é um projeto muito legal
-            <p className="font-courier">Venha conhecer!</p> */}
         </div>
     );
 }

@@ -5,21 +5,20 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Navigation } from "../ui/navigation"
 
 export const HomeHeader = () => {
+
+    const estilo_nav_item = 'hover:bg-primary';
     const sections = [
         {
             label: 'Início',
             href: 'home',
-            classN: 'hover:bg-primary'
         },
         {
             label: 'Projetos',
             href: 'projects',
-            classN: 'hover:bg-primary'
         },
         {
             label: 'Quem somos',
             href: 'about',
-            classN: 'hover:bg-primary'
         }
     ]
     
@@ -30,13 +29,13 @@ export const HomeHeader = () => {
             </a>
             <DropdownMenu>
                 <DropdownMenuTrigger className="sm:hidden">
-                   <MenuIcon size={32} color="white" /> 
+                    <MenuIcon size={32} color="white" /> 
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="mr-6 p-8">
-                    <Navigation navItem={sections} />
+                    <Navigation navItem={sections} classNavItem={estilo_nav_item}/>
                 </DropdownMenuContent>
             </DropdownMenu>
-            <Navigation className="hidden sm:flex" navItem={sections} />
+            <Navigation className="hidden sm:flex" navItem={sections} classNavItem={estilo_nav_item} />
         </div>
     )
 }

@@ -5,16 +5,16 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Navigation } from "../ui/navigation"
 
 export const BcHeader = () => {
+    const estilo_nav_item = "hover:bg-bc-caramel";
+
     const bc_sections = [
         {
             label: 'Início',
             href: 'home',
-            classN: 'hover:bg-bc-caramel'
         },
         {
             label: 'Edições Anteriores',
-            href: '/',
-            classN: 'hover:bg-bc-caramel'        
+            href: '/',     
         },
         {
             label: 'Material',
@@ -44,11 +44,11 @@ export const BcHeader = () => {
                         <MenuIcon size={32} color="#47160F" /> 
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="mt-[2.5rem] flex justify-center items-center w-full sm:max-w-[368px] mx-auto">
-                        <Navigation navItem={bc_sections}/>
+                        <Navigation navItem={bc_sections} classNavItem={estilo_nav_item}/>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
-            <Navigation className="hidden lg:flex" navItem={bc_sections} />
+            <Navigation className="hidden lg:flex" navItem={bc_sections} classNavItem={estilo_nav_item}/>
         </div>
     )
 }
