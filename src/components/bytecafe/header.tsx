@@ -5,7 +5,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Navigation } from "../ui/navigation"
 
 export const BcHeader = () => {
-    const estilo_nav_item = "hover:bg-bc-caramel";
+    const estilo_nav_item = "hover:bg-bc-caramel bg-bc-white border-0 shadow-0 text-bc-brown font-mono min-w-[20rem] font-bold px-4 py-2";
 
     const bc_sections = [
         {
@@ -18,18 +18,15 @@ export const BcHeader = () => {
         },
         {
             label: 'Material',
-            href: 'about',
-            classN: 'hover:bg-bc-caramel'        
+            href: 'about',    
         },
         {
             label: 'Participe',
-            href: 'about',
-            classN: 'hover:bg-bc-caramel'        
+            href: 'about',      
         },
         {
             label: 'FAQ',
-            href: 'faq',
-            classN: 'hover:bg-bc-caramel'        
+            href: 'faq',       
         }
     ]
     
@@ -44,7 +41,7 @@ export const BcHeader = () => {
                         <MenuIcon size={32} color="#47160F" /> 
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="mt-[2.5rem] flex justify-center items-center w-full sm:max-w-[368px] mx-auto">
-                        <Navigation navItem={bc_sections} classNavItem={estilo_nav_item}/>
+                        <Navigation navItem={bc_sections} classNavItem={estilo_nav_item} className="bg-bc-white border-0 gap-2 py-6"/>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
