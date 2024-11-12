@@ -15,7 +15,7 @@ export const Projects = () => {
         },
         {
             label: 'ByteCafé',
-            href: 'byte-cafe',
+            href: '/bytecafe',
             imageUrl: '/logo/bc.png',
             description: 'Duas vezes por semestre convidamos alunos do Ensino Médio para conhecer a USP e o curso de Ciência da Computação.'
         }
