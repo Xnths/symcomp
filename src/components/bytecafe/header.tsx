@@ -33,7 +33,7 @@ export const BcHeader = () => {
     ]
     
     return (
-        <div className="flex flex-row h-[109px] items-center justify-between w-full min-w-[368px] lg:w-[1024px] xl:w-[1120px] px-6">
+        <div className="flex flex-row h-[109px] items-center justify-between w-full min-w-[320px] lg:w-[1024px] xl:w-[1120px] px-6">
             <a href="#home">
                 <img alt="Logo do ByteCafé" src="/logo/logo_byte_horizontal.png" width={200} height={200} className="flex h-[50px] w-auto" />
             </a>
@@ -42,7 +42,7 @@ export const BcHeader = () => {
                     <DropdownMenuTrigger>
                         <MenuIcon size={32} color="#47160F" /> 
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="mt-[2.5rem] flex justify-center items-center w-full sm:max-w-[368px] mx-auto">
+                    <DropdownMenuContent className="mt-[2.5rem] flex justify-center items-center w-full sm:max-w-[320px] mx-auto">
                         <Navigation navItem={bc_sections} classNavItem={estilo_nav_item} className="bg-bc-white border-0 gap-2 py-0"/>
                     </DropdownMenuContent>
                 </DropdownMenu>
