@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 
 export default function ByteCafe() {
     return (
-        <div className="flex flex-col justify-center items-center bg-bc-white font-mont">
+        <main className="flex flex-col justify-start items-center bg-bc-white font-mont h-[100vh]">
             <BcHeader />
-            <BCHome />
-        </div>
+            <div className="flex">
+                <BCHome />
+            </div>
+        </main>
     );
 }
