@@ -1,7 +1,7 @@
 export const BCHome = () => {
     return (
-        <div className="flex flex-col justify-center items-center bg-bc-white text-center h-full font-mono">
-            <div className="flex flex-col justify-center items-center md:flex-col-reverse">
+        <div className="flex flex-col justify-center items-center bg-bc-white text-center lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:h-[90vh] lg:justify-center">
+            <div className="flex flex-col justify-center items-center md:flex-col-reverse lg:flex-row lg:flex-row-reverse lg:justify-between lg:items-center lg:w-full">
                 <Logo />
                 <Title />
             </div>
@@ -15,11 +15,22 @@ export const BCHome = () => {
 }
 
 const Logo = () => (
-    <img
-        alt="Logo do ByteCafé - Uma xícara feita de chaves (operador matemático) com números em binário (0 e 1) representando a bebida em cor de caramelo. Os números em binário representam o código do curso. Há um vapor, também em cor de caramelo saindo da xícara."
-        src="/logo/logo_bytecafe.svg" className="md:h-[16rem] mt-4 md:mt-0"
-    />
+    <div className="relative">
+        <img
+            alt="Logo do ByteCafé - Uma xícara feita de chaves (operador matemático) com números em binário (0 e 1) representando a bebida em cor de caramelo. Os números em binário representam o código do curso. Há um vapor, também em cor de caramelo saindo da xícara."
+            src="/logo/logo_bytecafe.svg" className="md:h-[16rem] mt-4 md:mt-0 lg:h-[20rem]"
+        />
+        <div className="hidden lg:block">
+            <img
+            alt="Reflexo do logo do ByteCafé"
+            src="/logo/logo_bytecafe.svg" className="mt-0 lg:h-[20rem] absolute top-full left-0 transform rotate-180 opacity-20"
+            style={{ clipPath: 'inset(0 0 0 0)', maskImage: 'linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0))' }}
+            />
+        </div>
+    </div>
 );
+
+
 
 const Title = () => (
     <span className="text-bc-caramel">
@@ -29,7 +40,7 @@ const Title = () => (
 );
 
 const Description = () => (
-    <p className="px-[1.5rem] text-[0.9rem] pb-8 max-w-[35rem]">
+    <p className="px-[1.5rem] lg:px-0 text-[0.9rem] pb-8 max-w-[35rem]">
         ByteCafé é um evento voltado para alunos no Ensino Médio conhecerem numa experiência prática o curso de <strong>Ciências da Computação</strong> do Instituto de Matemática e Estatística da Universidade de São Paulo - <strong>IME USP</strong>.
     </p>
 );
