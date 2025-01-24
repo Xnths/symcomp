@@ -1,6 +1,7 @@
 import { BcHeader } from "@/components/bytecafe/header";
 import { BCHome } from "@/components/bytecafe/home";
 import { BCPresentation } from "@/components/bytecafe/presentation";
+import { BCContent } from "@/components/bytecafe/content";
 
 import type { Metadata } from "next";
 
@@ -17,6 +18,7 @@ export default function ByteCafe() {
             <div className="flex flex-col justify-start items-center w-full">
                 <BCHome />
                 <BCPresentation />
+                <BCContent />
             </div>
         </main>
     );
