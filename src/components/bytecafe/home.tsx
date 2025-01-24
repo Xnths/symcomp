@@ -1,7 +1,7 @@
 export const BCHome = () => {
     return (
-        <div className="flex flex-col justify-center items-center h-screen bg-bc-white text-center lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:h-[90vh] lg:justify-center">
-            <div className="bg-green-200 h-[109px]"/>
+        <div className="flex flex-col justify-center items-center h-screen text-center  bg-bc-white lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:justify-center">
+            <div className="h-[100px] w-full z-4"/>
             <Header />
             <Invitation />
             <Description />
@@ -22,7 +22,7 @@ const Logo = () => (
         <img
             alt="Logo do ByteCafé - Uma xícara feita de chaves (operador matemático) com números em binário (0 e 1) representando a bebida em cor de caramelo. Os números em binário representam o código do curso. Há um vapor, também em cor de caramelo saindo da xícara."
             src="/logo/logo_bytecafe.svg"
-            className="md:h-[16rem] mt-4 md:mt-0 lg:h-[20rem] lg:h-[24rem]"
+            className="h-[18rem] md:h-[13rem] mt-4 md:mt-0 lg:h-[20rem] lg:h-[24rem]"
         />
         <div className="hidden lg:block">
             <img
