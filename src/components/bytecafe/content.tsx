@@ -27,7 +27,7 @@ const Overlay = () => (
 
 const MainContent = () => (
     <div className="h-[70%] md:h-[80%] z-10 mx-6 flex flex-col justify-center items-center">
-        <div className="h-[100px]"></div>
+        <div className="h-[80px]"></div>
         <Title />
         <ImageSection />
         <BCButton
