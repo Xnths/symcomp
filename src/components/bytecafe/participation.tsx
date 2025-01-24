@@ -1,4 +1,38 @@
 import BCButton from "./bcbutton";
+
+const Overlay = () => (
+    <div
+        className="absolute top-0 left-0 w-full h-full bg-bc-white opacity-90"
+        style={{ zIndex: 4 }}
+    ></div>
+);
+
+interface SectionProps {
+    title: string;
+    subtitle: string;
+    description: string;
+    buttons: { href: string; text: string; className: string }[];
+}
+
+const Section = ({ title, subtitle, description, buttons }: SectionProps) => (
+    <div className="z-10 flex flex-col justify-center items-center lg:justify-start mt-12">
+        <span className="text-bc-caramel text-center">
+            <p className="text-[2rem]">{title}</p>
+            <p className="text-[1.2rem]">{subtitle}</p>
+        </span>
+        <p className="text-left text-[0.9rem] m-4 max-w-[20rem]">{description}</p>
+        {buttons.map((button, index) => (
+            <BCButton
+                key={index}
+                href={button.href}
+                className={`w-[11rem] justify-center text-bc-caramel border-bc-caramel shadow-[4px_4px_0_rgba(198,129,78,1)] hover:bg-bc-brown px-0 ${button.className}`}
+            >
+                {button.text}
+            </BCButton>
+        ))}
+    </div>
+);
+
 export const BCParticipation = () => {
     return (
         <div
@@ -11,47 +45,36 @@ export const BCParticipation = () => {
                 zIndex: 3,
             }}
         >
-        <Overlay />
-        <Participe />
-        <Apoie />
-
+            <Overlay />
+            <Section
+                title="PARTICIPE"
+                subtitle="DO BYTECAFÉ"
+                description="Gostaria de inscrever sua escola para participar de uma edição do ByteCafé? Se inscreva no botão abaixo:"
+                buttons={[
+                    {
+                        href: "#",
+                        text: "INSCREVA-SE",
+                        className: "hover:text-bc-white",
+                    },
+                ]}
+            />
+            <Section
+                title="SEJA UM"
+                subtitle="APOIADOR"
+                description="Gostaria apoiar o evento como voluntário ou patrocinador? Clique no botão abaixo:"
+                buttons={[
+                    {
+                        href: "#",
+                        text: "PATROCINE",
+                        className: "mb-8 hover:text-bc-white",
+                    },
+                    {
+                        href: "#",
+                        text: "VOLUNTÁRIE-SE",
+                        className: "bg-transparent lg:mb-[3rem] hover:text-bc-white",
+                    },
+                ]}
+            />
         </div>
     );
-}
-
-
-const Overlay = () => (
-    <div
-        className="absolute top-0 left-0 w-full h-full bg-bc-white opacity-90"
-        style={{ zIndex: 4 }}
-    ></div>
-);
-
-const Participe = () => (
-    <div className="z-10 flex flex-col justify-center items-center">
-        <span className="text-bc-caramel text-center">
-            <p className="text-[2rem]">PARTICIPE</p>
-            <p className="text-[1.2rem]">DO BYTECAFÉ</p>
-        </span>
-        <p className="text-left text-[0.9rem] m-4 max-w-[20rem]">Gostaria de inscrever sua escola para participar de uma edição do ByteCafé? Se inscreva no botão abaixo:</p>
-        <BCButton href="#" className="w-[11rem] justify-center text-bc-caramel border-bc-caramel shadow-[4px_4px_0_rgba(198,129,78,1)] hover:bg-bc-brown px-0">
-        INSCREVA-SE
-        </BCButton>
-    </div>
-);
-
-const Apoie = () => (
-    <div className="z-10 flex flex-col justify-center items-center lg:justify-start mt-12">
-        <span className="text-bc-caramel text-center">
-            <p className="text-[2rem]">SEJA UM</p>
-            <p className="text-[1.2rem]">APOIADOR</p>
-        </span>
-        <p className="text-left text-[0.9rem] m-4 max-w-[20rem]">Gostaria apoiar o evento como voluntário ou patrocinador? Clique no botão abaixo:</p>
-        <BCButton href="#" className="w-[11rem] justify-center text-bc-caramel border-bc-caramel shadow-[4px_4px_0_rgba(198,129,78,1)] hover:bg-bc-brown px-0 mb-8">
-        PATROCINE
-        </BCButton>
-        <BCButton href="#" className="w-[11rem] justify-center text-bc-caramel border-bc-caramel shadow-[4px_4px_0_rgba(198,129,78,1)] hover:bg-bc-brown px-0 bg-transparent lg:mb-[3rem]">
-        VOLUNTÁRIE-SE
-        </BCButton>
-    </div>
-);
+};

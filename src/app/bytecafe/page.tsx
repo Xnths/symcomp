@@ -3,7 +3,7 @@ import { BCHome } from "@/components/bytecafe/home";
 import { BCPresentation } from "@/components/bytecafe/presentation";
 import { BCContent } from "@/components/bytecafe/content";
 import { BCParticipation } from "@/components/bytecafe/participation";
-
+import { BCFaq } from "@/components/bytecafe/faq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,6 +21,7 @@ export default function ByteCafe() {
                 <BCPresentation />
                 <BCContent />
                 <BCParticipation />
+                <BCFaq />
             </div>
         </main>
     );

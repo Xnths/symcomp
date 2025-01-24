@@ -61,7 +61,7 @@ const ImageSection = () => (
 );
 
 const Footer = () => (
-    <div className="bg-bc-black h-[30%] md:h-[20%] w-screen z-10 flex flex-col justify-center items-center">
+    <div className="bg-bc-black h-[30%] md:h-[20%] w-full z-10 flex flex-col justify-center items-center">
         <div className="text-bc-white">
             <p className="text-[2rem]">ACESSE</p>
             <p>O MATERIAL</p>
