@@ -2,6 +2,7 @@ import { BcHeader } from "@/components/bytecafe/header";
 import { BCHome } from "@/components/bytecafe/home";
 import { BCPresentation } from "@/components/bytecafe/presentation";
 import { BCContent } from "@/components/bytecafe/content";
+import { BCParticipation } from "@/components/bytecafe/participation";
 
 import type { Metadata } from "next";
 
@@ -19,6 +20,7 @@ export default function ByteCafe() {
                 <BCHome />
                 <BCPresentation />
                 <BCContent />
+                <BCParticipation />
             </div>
         </main>
     );

@@ -7,7 +7,7 @@ import { Navigation } from "../ui/navigation"
 export const BcHeader = () => {
     const estilo_nav_item = "hover:bg-bc-caramel bg-bc-white border-0 shadow-0 text-bc-brown font-mono min-w-[20rem] font-bold px-4 py-2";
 
-    const estilo_nav_item_desk = "hover:bg-bc-caramel bg-bc-white border-4 border-bc-brown shadow-[4px_4px_0_rgba(71,22,15,1)] text-bc-brown font-mono font-bold px-4 h-[2.5rem] text-[1rem]";
+    const estilo_nav_item_desk = "hover:bg-bc-caramel bg-bc-white border-4 border-bc-brown shadow-[4px_4px_0_rgba(10,22,15,1)] text-bc-brown font-mono font-bold px-4 h-[2.5rem] text-[1rem]";
 
     const bc_sections = [
         {
