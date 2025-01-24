@@ -1,6 +1,7 @@
+import BCButton from "./bcbutton";
 export const BCHome = () => {
     return (
-        <div className="flex flex-col justify-center items-center h-screen text-center  bg-bc-white lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:justify-center">
+        <div className="flex flex-col justify-center items-center min-h-screen text-center  bg-bc-white lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:justify-center">
             <div className="h-[100px] w-full z-4"/>
             <Header />
             <Invitation />
@@ -55,7 +56,7 @@ const Description = () => (
 );
 
 const ParticipeButton = () => (
-    <a href="#" className="flex items-center hover:bg-bc-caramel bg-bc-white border-4 border-bc-brown shadow-[4px_4px_0_rgba(71,22,15,1)] text-bc-brown font-mono font-bold px-8 h-[2.5rem] text-[1rem] mb-8">
+    <BCButton href="#" className="mb-8">
         PARTICIPE
-    </a>
+    </BCButton>
 );
