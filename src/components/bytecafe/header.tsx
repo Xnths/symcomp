@@ -33,7 +33,7 @@ export const BcHeader = () => {
     ]
     
     return (
-        <div className="flex flex-row min-h-[100px]  items-center justify-between w-full min-w-[320px] lg:w-[1024px] xl:w-[1120px] px-6">
+        <div className="flex flex-row min-h-[100px]  items-center justify-between w-full min-w-[320px] lg:w-[1024px] xl:w-[1120px] px-6 fixed z-50 bg-bc-white">
             <a href="#home">
                 <img alt="Logo do ByteCafé" src="/logo/logo_byte_horizontal.png" width={200} height={200} className="flex h-[50px] w-auto" />
             </a>

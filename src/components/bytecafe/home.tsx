@@ -1,6 +1,7 @@
 export const BCHome = () => {
     return (
-        <div className="flex flex-col justify-center items-center bg-bc-white text-center lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:h-[90vh] lg:justify-center">
+        <div className="flex flex-col justify-center items-center h-screen bg-bc-white text-center lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:h-[90vh] lg:justify-center">
+            <div className="bg-green-200 h-[109px]"/>
             <Header />
             <Invitation />
             <Description />
