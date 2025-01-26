@@ -3,13 +3,13 @@ import BCButton from "./bcbutton";
 
 export const BCFaq = () => {
     return (
-        <div className="w-full flex flex-col justify-center items-center min-h-screen text-center bg-bc-caramel lg:min-w-[65rem] font-mono px-8 lg:flex-row">
+        <div id="bcfaq" className="w-full flex flex-col justify-center items-center min-h-screen text-center bg-bc-caramel lg:min-w-[65rem] font-mono px-8 lg:flex-row">
             <div className="flex flex-col justify-center items-center lg:w-[28rem]">
                 <div className="h-[100px] lg:hidden"></div>
                 <h3 className="text-[3rem] text-bc-brow">FAQ</h3>
                 <p className="md:w-[40rem] text-[0.9rem] lg:w-[25rem] lg:py-[1rem]">Ficou com mais alguma dúvida? Veja no FAQ no botão abaixo, ou envie um e-mail para mais informações! :)</p>
                 <BCButton
-                href="#"
+                href="mailto:semanadacomputacao@ime.usp.br"
                 className="w-[13rem] justify-center items-center text-center bg-transparent text-bc-brown border-bc-brown shadow-[4px_4px_0_rgba(71,22,15,1)] my-4 p-0 hover:bg-bc-white hover:text-bc-brown"
                 >
                 ENVIAR E-MAIL

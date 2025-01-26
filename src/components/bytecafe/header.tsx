@@ -16,19 +16,19 @@ export const BcHeader = () => {
         },
         {
             label: 'Edições Anteriores',
-            href: '/',     
+            href: 'content',     
         },
         {
             label: 'Material',
-            href: 'about',    
+            href: 'material',    
         },
         {
             label: 'Participe',
-            href: 'about',      
+            href: 'participation',      
         },
         {
             label: 'FAQ',
-            href: 'faq',       
+            href: 'bcfaq',       
         }
     ]
     

@@ -1,7 +1,7 @@
 import BCButton from "./bcbutton";
 export const BCHome = () => {
     return (
-        <div className="flex flex-col justify-center items-center min-h-screen text-center  bg-bc-white lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:justify-center">
+        <div id="home" className="flex flex-col justify-center items-center min-h-screen text-center  bg-bc-white lg:text-left lg:min-w-[65rem] font-mono lg:items-start lg:px-[2rem] lg:justify-center">
             <div className="h-[100px] w-full z-4"/>
             <Header />
             <Invitation />
@@ -56,7 +56,7 @@ const Description = () => (
 );
 
 const ParticipeButton = () => (
-    <BCButton href="#" className="mb-8 hover:bg-bc-caramel">
+    <BCButton href="#participation" target="_self" className="mb-8 hover:bg-bc-caramel">
         PARTICIPE
     </BCButton>
 );

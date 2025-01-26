@@ -2,7 +2,7 @@ import BCButton from "./bcbutton";
 
 export const BCContent = () => {
     return (
-        <div
+        <div id="content"
             className="flex flex-col justify-center items-center min-h-screen text-center lg:text-left bg-bc-caramel w-full lg:min-w-[65rem] font-mono lg:px-[2rem] lg:justify-center relative overflow-x-hidden"
             style={{
                 backgroundImage: 'url(/logo/bc_black.png)',
@@ -61,7 +61,7 @@ const ImageSection = () => (
 );
 
 const Footer = () => (
-    <div className="bg-bc-black h-[30%] md:h-[20%] z-10 flex flex-col justify-center items-center w-[100vh]">
+    <div id="material" className="bg-bc-black h-[30%] md:h-[20%] z-10 flex flex-col justify-center items-center w-[100vh]">
         <div className="text-bc-white">
             <p className="text-[2rem]">ACESSE</p>
             <p>O MATERIAL</p>

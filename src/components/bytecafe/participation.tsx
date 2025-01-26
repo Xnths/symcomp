@@ -2,6 +2,7 @@ import BCButton from "./bcbutton";
 
 const Overlay = () => (
     <div
+        id="participation"
         className="absolute top-0 left-0 w-full h-full bg-bc-white opacity-90"
         style={{ zIndex: 4 }}
     ></div>
