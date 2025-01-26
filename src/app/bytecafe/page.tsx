@@ -16,7 +16,7 @@ export default function ByteCafe() {
     return (
         <main className="flex flex-col justify-start items-center bg-bc-white font-mont h-[100vh]">
             <BcHeader />
-            <div className="flex flex-col justify-start items-center w-full">
+            <div className="flex flex-col justify-start items-center w-full ">
                 <BCHome />
                 <BCPresentation />
                 <BCContent />

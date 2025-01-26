@@ -3,7 +3,7 @@ import BCButton from "./bcbutton";
 export const BCContent = () => {
     return (
         <div
-            className="flex flex-col justify-center items-center min-h-screen text-center lg:text-left bg-bc-caramel w-full lg:min-w-[65rem] font-mono lg:px-[2rem] lg:justify-center relative"
+            className="flex flex-col justify-center items-center min-h-screen text-center lg:text-left bg-bc-caramel w-full lg:min-w-[65rem] font-mono lg:px-[2rem] lg:justify-center relative overflow-x-hidden"
             style={{
                 backgroundImage: 'url(/logo/bc_black.png)',
                 backgroundRepeat: 'repeat',
@@ -40,7 +40,7 @@ const MainContent = () => (
 );
 
 const Title = () => (
-    <h2 className="text-bc-brown m-2">
+    <h2 className="text-bc-brown m-2 text-center">
         <span className="text-[2rem]">EDIÇÕES</span>
         <br />
         <span className="text-[1.2rem]">ANTERIORES</span>
@@ -61,7 +61,7 @@ const ImageSection = () => (
 );
 
 const Footer = () => (
-    <div className="bg-bc-black h-[30%] md:h-[20%] w-full z-10 flex flex-col justify-center items-center">
+    <div className="bg-bc-black h-[30%] md:h-[20%] z-10 flex flex-col justify-center items-center w-[100vh]">
         <div className="text-bc-white">
             <p className="text-[2rem]">ACESSE</p>
             <p>O MATERIAL</p>
