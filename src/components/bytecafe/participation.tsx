@@ -52,7 +52,7 @@ export const BCParticipation = () => {
                 description="Gostaria de inscrever sua escola para participar de uma edição do ByteCafé? Se inscreva no botão abaixo:"
                 buttons={[
                     {
-                        href: "#",
+                        href: "https://docs.google.com/forms/d/e/1FAIpQLSeKgrutSRuZH5bk5syGWqtaU87q4pDhuaU3aRNcIVYsAQIfQA/viewform?usp=preview",
                         text: "INSCREVA-SE",
                         className: "hover:text-bc-white hover:bg-bc-brown text-bc-brown",
                     },
@@ -64,12 +64,12 @@ export const BCParticipation = () => {
                 description="Gostaria apoiar o evento como voluntário ou patrocinador? Clique no botão abaixo:"
                 buttons={[
                     {
-                        href: "#",
+                        href: "https://docs.google.com/forms/d/e/1FAIpQLSdrmdbySCqquLTWwRe_PwmgalVbE6C8XNNYAY2xcVFNRC2crw/viewform?usp=preview",
                         text: "PATROCINE",
                         className: "mb-8 hover:text-bc-white",
                     },
                     {
-                        href: "#",
+                        href: "https://docs.google.com/forms/d/e/1FAIpQLSe3A6S3YqWAEFjr1U73EQy8eZVwgniYPRAP61PwYkw6fagdkA/viewform?usp=preview",
                         text: "VOLUNTÁRIE-SE",
                         className: "bg-transparent lg:mb-[3rem] hover:text-bc-white",
                     },
