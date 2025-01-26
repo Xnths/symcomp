@@ -32,7 +32,7 @@ const MainContent = () => (
         <ImageSection />
         <BCButton
             href="#"
-            className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-brown border-bc-brown shadow-[4px_4px_0_rgba(71,22,15,1)] my-4 hover:bg-bc-white"
+            className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-brown border-bc-brown shadow-[4px_4px_0_rgba(71,22,15,1)] my-4 hover:bg-bc-white hover:text-bc-brown"
         >
             SAIBA MAIS
         </BCButton>
@@ -52,7 +52,7 @@ const ImageSection = () => (
         <img
             src="/photos/bytecafe_2024_1.JPG"
             alt="Participantes da 1º edição do ByteCafé"
-            className="w-[80%] border-4 border-white shadow-[4px_4px_0_rgba(255,255,250,1)] mb-2 md:w-[25rem] lg:w-[30rem]"
+            className="w-[80%] border-4 border-white shadow-[4px_4px_0_rgba(255,255,255,1)] mb-2 md:w-[25rem] lg:w-[30rem]"
         />
         <p className="text-bc-brown font-bold mt-2 text-[0.9rem]">
             E.E Bibliotecária Maria Antonieta de Ferraz 2024.1
@@ -68,7 +68,7 @@ const Footer = () => (
         </div>
         <BCButton
             href="#"
-            className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-white border-bc-white shadow-[4px_4px_0_rgba(255,255,250,1)] my-4 hover:bg-bc-caramel"
+            className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-white border-bc-white shadow-[4px_4px_0_rgba(255,255,255,1)] my-4 hover:bg-bc-caramel hover:text-bc-white"
         >
             MANUAL USP
         </BCButton>

@@ -56,7 +56,7 @@ const Description = () => (
 );
 
 const ParticipeButton = () => (
-    <BCButton href="#" className="mb-8">
+    <BCButton href="#" className="mb-8 hover:bg-bc-caramel">
         PARTICIPE
     </BCButton>
 );

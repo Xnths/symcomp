@@ -25,7 +25,7 @@ const Section = ({ title, subtitle, description, buttons }: SectionProps) => (
             <BCButton
                 key={index}
                 href={button.href}
-                className={`w-[11rem] justify-center text-bc-caramel border-bc-caramel shadow-[4px_4px_0_rgba(198,129,78,1)] hover:bg-bc-brown px-0 ${button.className}`}
+                className={`w-[12.5rem] justify-center text-bc-caramel border-bc-caramel shadow-[4px_4px_0_rgba(195,129,78,1)] hover:bg-bc-brown ${button.className}`}
             >
                 {button.text}
             </BCButton>
@@ -54,7 +54,7 @@ export const BCParticipation = () => {
                     {
                         href: "#",
                         text: "INSCREVA-SE",
-                        className: "hover:text-bc-white",
+                        className: "hover:text-bc-white hover:bg-bc-brown text-bc-brown",
                     },
                 ]}
             />
