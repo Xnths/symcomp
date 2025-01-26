@@ -15,12 +15,12 @@ export const BcHeader = () => {
             href: 'home',
         },
         {
-            label: 'Edições Anteriores',
-            href: 'content',     
+            label: 'Quem Somos',
+            href: 'presentation',    
         },
         {
-            label: 'Material',
-            href: 'material',    
+            label: 'Edições Anteriores',
+            href: 'content',     
         },
         {
             label: 'Participe',

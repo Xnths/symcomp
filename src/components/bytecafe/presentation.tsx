@@ -18,7 +18,7 @@ const Section = ({ title, subtitle, children }: SectionProps) => (
 
 export const BCPresentation = () => {
     return (
-        <div className="relative flex flex-col justify-center items-center bg-bc-brown text-bc-white min-h-screen px-8 font-mono overflow-x-hidden overflow-y-hidden w-full">
+        <div id="presentation" className="relative flex flex-col justify-center items-center bg-bc-brown text-bc-white min-h-screen px-8 font-mono overflow-x-hidden overflow-y-hidden w-full">
             <img
                 alt="Logo transparente do ByteCafé"
                 src="/logo/bc_black.png"
@@ -33,7 +33,7 @@ export const BCPresentation = () => {
                 <Section title="QUEM" subtitle="SOMOS_">
                     Somos um grupo de extensão chamado SymComp | Simpósio de Computação, formado por alunos da graduação do curso de Ciência da Computação do IME-USP, cujo foco é realizar eventos de computação para comunidade interna e externa da faculdade, levando o conteúdo de computação para todes.
                 </Section>
-                <BCButton href="#" className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-white border-bc-white shadow-[4px_4px_0_rgba(255,255,255,1)] md:ml-8 mb-8 hover:bg-bc-caramel hover:text-bc-white">
+                <BCButton target="_self" href="#" className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-white border-bc-white shadow-[4px_4px_0_rgba(255,255,255,1)] md:ml-8 mb-8 hover:bg-bc-caramel hover:text-bc-white">
                     SAIBA MAIS
                 </BCButton>
             </div>

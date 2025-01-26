@@ -31,6 +31,7 @@ const MainContent = () => (
         <Title />
         <ImageSection />
         <BCButton
+            target="_self"
             href="#"
             className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-brown border-bc-brown shadow-[4px_4px_0_rgba(71,22,15,1)] my-4 hover:bg-bc-white hover:text-bc-brown"
         >
@@ -67,6 +68,7 @@ const Footer = () => (
             <p>O MATERIAL</p>
         </div>
         <BCButton
+            target="_self"
             href="#"
             className="w-[11rem] justify-center items-center text-center bg-transparent text-bc-white border-bc-white shadow-[4px_4px_0_rgba(255,255,255,1)] my-4 hover:bg-bc-caramel hover:text-bc-white"
         >
