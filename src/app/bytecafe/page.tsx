@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { BcHeader } from './header'
-import { BCHome } from './home'
-import { BCPresentation } from './presentation'
+
 import { BCContent } from './content'
-import { BCParticipation } from './participation'
 import { BCFaq } from './faq'
 import { BCFooter } from './footer'
+import { BcHeader } from './header'
+import { BCHome } from './home'
+import { BCParticipation } from './participation'
+import { BCPresentation } from './presentation'
 
 export const metadata: Metadata = {
   title: 'ByteCafé | Um Projeto SymComp',
