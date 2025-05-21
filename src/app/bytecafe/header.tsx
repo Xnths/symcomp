@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Navigation } from '@/components/ui/navigation'
 
-export const BcHeader = () => {
+export const BCHeader = () => {
   const estilo_nav_item =
     'hover:bg-bc-caramel bg-bc-white border-0 shadow-0 text-bc-brown font-mono min-w-[20rem] font-bold px-4 py-2'
 

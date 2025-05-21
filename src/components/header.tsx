@@ -1,40 +1,34 @@
-import { MenuIcon, MenuSquareIcon } from 'lucide-react'
+import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
+
+import { Logo } from '@/types/logo'
+import { NavigationItem } from '@/types/navigation-item'
 
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuTrigger,
-} from '../ui/dropdown-menu'
-import { Navigation } from '../ui/navigation'
+} from './ui/dropdown-menu'
+import { Navigation } from './ui/navigation'
 
-export const HomeHeader = () => {
+export const Header = ({
+  sections,
+  logo,
+}: {
+  sections: NavigationItem[]
+  logo: Logo
+}) => {
   const estilo_nav_item = 'hover:bg-primary'
-  const sections = [
-    {
-      label: 'Início',
-      href: 'home',
-    },
-    {
-      label: 'Projetos',
-      href: 'projects',
-    },
-    {
-      label: 'Quem somos',
-      href: 'about',
-    },
-  ]
 
   return (
     <div className="flex flex-row h-[100px] px-6 gap-2 items-center justify-between w-full bg-background">
       <a href="#home">
         <Image
-          alt="Logo da Symcomp"
-          src="/logo/symcomp.png"
-          width={100}
-          height={100}
-          className="flex size-[60px]"
+          alt={logo.alt}
+          src={logo.src}
+          width={logo.width}
+          height={logo.height}
+          className={logo.className ?? 'size-[60px]'}
         />
       </a>
       <DropdownMenu>

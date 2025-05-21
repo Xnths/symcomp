@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 
+import { Header } from '@/components/header'
 import { AboutUs } from '@/components/home/about-us'
 import { Footer } from '@/components/home/footer'
-import { HomeHeader } from '@/components/home/header'
 import { HeroSection } from '@/components/home/hero-section'
 import { Projects } from '@/components/home/projects'
-import { Title } from '@/components/ui/title'
 
 export const metadata: Metadata = {
   title: 'SYMCOMP | Aproximando a computação e a sociedade',
@@ -14,10 +13,33 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const sections = [
+    {
+      label: 'Início',
+      href: 'home',
+    },
+    {
+      label: 'Projetos',
+      href: 'projects',
+    },
+    {
+      label: 'Quem somos',
+      href: 'about',
+    },
+  ]
+
+  const logo = {
+    alt: 'Logo do grupo de extensão',
+    src: '/logo/symcomp.png',
+    width: 100,
+    height: 100,
+    className: 'size-[60px]',
+  }
+
   return (
     <main className="bg-white h-screen">
       <div className="grid grid-rows-[auto,1fr] h-screen">
-        <HomeHeader />
+        <Header sections={sections} logo={logo} />
         <div className="h-full w-full overflow-auto">
           <HeroSection />
           <Projects />
