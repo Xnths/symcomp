@@ -1,10 +1,11 @@
+import type { Metadata } from 'next'
+
 import { AboutUs } from '@/components/home/about-us'
 import { Footer } from '@/components/home/footer'
 import { HomeHeader } from '@/components/home/header'
 import { HeroSection } from '@/components/home/hero-section'
 import { Projects } from '@/components/home/projects'
 import { Title } from '@/components/ui/title'
-import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'SYMCOMP | Aproximando a computação e a sociedade',
