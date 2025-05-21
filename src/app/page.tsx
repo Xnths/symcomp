@@ -5,6 +5,9 @@ import { AboutUs } from '@/components/home/about-us'
 import { Footer } from '@/components/home/footer'
 import { HeroSection } from '@/components/home/hero-section'
 import { Projects } from '@/components/home/projects'
+import { symcompPrimaryColor, symcompPrimaryColorContrast } from '@/lib/constants'
+import { Color } from '@/types/color'
+import { Logo } from '@/types/logo'
 
 export const metadata: Metadata = {
   title: 'SYMCOMP | Aproximando a computação e a sociedade',
@@ -28,7 +31,7 @@ export default function Home() {
     },
   ]
 
-  const logo = {
+  const logo: Logo = {
     alt: 'Logo do grupo de extensão',
     src: '/logo/symcomp.png',
     width: 100,
@@ -36,10 +39,20 @@ export default function Home() {
     className: 'size-[60px]',
   }
 
+  const color: Color = {
+    primary: symcompPrimaryColor,
+    contrast: symcompPrimaryColorContrast,
+  }
+
   return (
     <main className="bg-white h-screen">
-      <div className="grid grid-rows-[auto,1fr] h-screen">
-        <Header sections={sections} logo={logo} />
+      <div className="grid grid-rows-[auto,1fr] h-full">
+        <Header
+          backgroundColor="bg-background"
+          color={color}
+          sections={sections}
+          logo={logo}
+        />
         <div className="h-full w-full overflow-auto">
           <HeroSection />
           <Projects />

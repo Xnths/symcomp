@@ -1,6 +1,8 @@
 import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
 
+import { cn, getContrastColor } from '@/lib/utils'
+import { Color } from '@/types/color'
 import { Logo } from '@/types/logo'
 import { NavigationItem } from '@/types/navigation-item'
 
@@ -11,17 +13,21 @@ import {
 } from './ui/dropdown-menu'
 import { Navigation } from './ui/navigation'
 
-export const Header = ({
-  sections,
-  logo,
-}: {
+interface HeaderProps {
   sections: NavigationItem[]
   logo: Logo
-}) => {
-  const estilo_nav_item = 'hover:bg-primary'
+  color: Color
+  backgroundColor: string
+}
 
+export const Header = ({ sections, logo, color, backgroundColor }: HeaderProps) => {
   return (
-    <div className="flex flex-row h-[100px] px-6 gap-2 items-center justify-between w-full bg-background">
+    <div
+      className={cn(
+        'flex flex-row min-h-[100px] px-6 gap-2 items-center justify-between w-full',
+        backgroundColor,
+      )}
+    >
       <a href="#home">
         <Image
           alt={logo.alt}
@@ -33,17 +39,13 @@ export const Header = ({
       </a>
       <DropdownMenu>
         <DropdownMenuTrigger className="sm:hidden">
-          <MenuIcon size={32} color="white" />
+          <MenuIcon size={32} color={getContrastColor(color.contrast)} />
         </DropdownMenuTrigger>
         <DropdownMenuContent className="mr-6 p-8">
-          <Navigation navItem={sections} classNavItem={estilo_nav_item} />
+          <Navigation navItem={sections} color={color} />
         </DropdownMenuContent>
       </DropdownMenu>
-      <Navigation
-        className="hidden sm:flex"
-        navItem={sections}
-        classNavItem={estilo_nav_item}
-      />
+      <Navigation className="hidden sm:flex" navItem={sections} color={color} />
     </div>
   )
 }

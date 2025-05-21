@@ -43,7 +43,7 @@ const config = {
         },
         bc: {
           white: {
-            DEFAULT: '#F1F1F1', // Use sua variável
+            DEFAULT: '#F1F1F1',
           },
           caramel: {
             DEFAULT: '#C0771B',
