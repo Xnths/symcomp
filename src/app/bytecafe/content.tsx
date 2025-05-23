@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import BCButton from './bcbutton'
 
 export const BCContent = () => {
@@ -51,9 +53,11 @@ const Title = () => (
 
 const ImageSection = () => (
   <>
-    <img
+    <Image
+      width={200}
+      height={200}
+      alt="Foto de alunos do ensino médio. Temos a maioria deles próximo à lousa e o resto agachado "
       src="/photos/bytecafe_2024_1.JPG"
-      alt="Participantes da 1º edição do ByteCafé"
       className="w-[80%] border-4 border-white shadow-[4px_4px_0_rgba(255,255,255,1)] mb-2 md:w-[25rem] lg:w-[30rem]"
     />
     <p className="text-bc-brown font-bold mt-2 text-[0.9rem]">

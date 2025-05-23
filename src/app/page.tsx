@@ -45,7 +45,7 @@ export default function Home() {
   }
 
   return (
-    <main className="bg-white h-screen">
+    <main className="bg-white h-svh">
       <div className="grid grid-rows-[auto,1fr] h-full">
         <Header
           backgroundColor="bg-background"
