@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Button } from '../ui/button'
 import { CustomButton } from '../ui/custom-button'
 import { Title } from '../ui/title'
 

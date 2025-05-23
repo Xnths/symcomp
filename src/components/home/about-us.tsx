@@ -1,4 +1,3 @@
-import { CustomButton } from '../ui/custom-button'
 import { Title } from '../ui/title'
 
 export const AboutUs = () => {
