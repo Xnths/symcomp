@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { Header } from '@/components/header'
-import { BCPrimaryColor, BCPrimaryColorContrast } from '@/lib/constants'
+import { BC_PRIMARY_COLOR, BC_PRIMARY_COLOR_CONTRAST } from '@/lib/constants'
 import { Color } from '@/types/color'
 import { Logo } from '@/types/logo'
 
@@ -51,8 +51,8 @@ export default function ByteCafe() {
   }
 
   const color: Color = {
-    primary: BCPrimaryColor,
-    contrast: BCPrimaryColorContrast,
+    primary: BC_PRIMARY_COLOR,
+    contrast: BC_PRIMARY_COLOR_CONTRAST,
   }
 
   return (

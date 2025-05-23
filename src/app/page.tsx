@@ -5,7 +5,7 @@ import { AboutUs } from '@/components/home/about-us'
 import { Footer } from '@/components/home/footer'
 import { HeroSection } from '@/components/home/hero-section'
 import { Projects } from '@/components/home/projects'
-import { symcompPrimaryColor, symcompPrimaryColorContrast } from '@/lib/constants'
+import { SYMCOMP_PRIMARY_COLOR, SYMCOMP_PRIMARY_COLOR_CONTRAST } from '@/lib/constants'
 import { Color } from '@/types/color'
 import { Logo } from '@/types/logo'
 
@@ -40,8 +40,8 @@ export default function Home() {
   }
 
   const color: Color = {
-    primary: symcompPrimaryColor,
-    contrast: symcompPrimaryColorContrast,
+    primary: SYMCOMP_PRIMARY_COLOR,
+    contrast: SYMCOMP_PRIMARY_COLOR_CONTRAST,
   }
 
   return (
