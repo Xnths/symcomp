@@ -54,6 +54,23 @@ const config = {
             DEFAULT: '#1E1E1E',
           },
         },
+        'sc-2025': {
+          primary: {
+            DEFAULT: '#ffbe0b',
+          },
+          secondary: {
+            DEFAULT: '#b25cca',
+          },
+          background: {
+            DEFAULT: '#149d9c',
+          },
+          foreground: {
+            DEFAULT: '#fefefe',
+          },
+          contrast: {
+            DEFAULT: '#003049',
+          },
+        },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',

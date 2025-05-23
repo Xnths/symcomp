@@ -70,3 +70,9 @@
     font-family: 'Courier Prime', 'Montserrat', 'DM Sans', sans-serif; /* Fonte padrão */
   }
 }
+
+@layer utilities {
+  .sc-2025-text-shadow-solid {
+    text-shadow: -6px 4px 0 #003049;
+  }
+}
