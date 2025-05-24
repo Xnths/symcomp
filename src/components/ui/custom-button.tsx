@@ -6,7 +6,7 @@ import { Button } from './button'
 
 interface CustomButtonProps {
   children: ReactNode
-  color: 'yellow' | 'pink'
+  color: 'yellow' | 'pink' | 'white'
   disabled?: boolean
 }
 
@@ -15,9 +15,12 @@ export const CustomButton = ({ children, color, disabled }: CustomButtonProps) =
     <Button
       disabled={disabled}
       className={cn(
-        'font-extrabold py-2 shadow-solid mb-[5px] border-4 border-black',
+        'font-extrabold py-2 symcomp-border mb-[5px]',
         color === 'yellow' ? 'bg-secondary' : '',
         color === 'pink' ? 'bg-primary hover:bg-secondary' : '',
+        color === 'white'
+          ? 'bg-white hover:bg-secondary hover:text-white text-black'
+          : '',
       )}
     >
       {children}

@@ -76,3 +76,8 @@
     text-shadow: -6px 4px 0 #003049;
   }
 }
+
+.symcomp-border {
+  box-shadow: 5px 5px 0 black;
+  border: 5px solid black;
+}
