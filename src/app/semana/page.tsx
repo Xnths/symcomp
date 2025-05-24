@@ -49,7 +49,7 @@ export default function Semana() {
                   'font-bold text-6xl lg:text-8xl italic text-sc-2025-primary sc-2025-text-shadow-solid',
                 )}
               >
-                SEMANA
+                SEMANA AAAAAAAAAAAAA
               </h2>
               <h2
                 className={cn(
