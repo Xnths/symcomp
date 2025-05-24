@@ -83,7 +83,7 @@ export default function Semana() {
       </div>
       <div className="flex flex-col bg-sc-2025-background justify-center items-center">
         <h2 className="font-bold text-2xl lg:text-2xl text-black symcomp-border py-2 px-8 bg-white">
-          EDIÇÃO DE 2024 aaaaaaaaaaaaaaaaaa
+          EDIÇÃO DE 2024
         </h2>
 
         <div className="w-fit flex flex-row flex-wrap justify-center items-center p-[50px] gap-4">
