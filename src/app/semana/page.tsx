@@ -24,6 +24,10 @@ export default function Semana() {
       alt: 'Três dos organizadores, vestidos com a camiseta do evento em rosa, estão configurando o som para próxima apresentação.',
     },
     {
+      src: '/photos/encontro.JPG',
+      alt: 'Em roda, vários ex-alunos e atuais professores do departamento conversam com alunos da graduação sobre suas experiências.',
+    },
+    {
       src: '/photos/coffee_break.JPG',
       alt: 'Em um corredor amplo, alunos participantes das palestras confraternizam e conversam no Bloco B do IME - USP',
     },
@@ -79,7 +83,7 @@ export default function Semana() {
       </div>
       <div className="flex flex-col bg-sc-2025-background justify-center items-center">
         <h2 className="font-bold text-2xl lg:text-2xl text-black symcomp-border py-2 px-8 bg-white">
-          EDIÇÃO DE 2024
+          EDIÇÃO DE 2024 aaaaaaaaaaaaaaaaaa
         </h2>
 
         <div className="w-fit flex flex-row flex-wrap justify-center items-center p-[50px] gap-4">
