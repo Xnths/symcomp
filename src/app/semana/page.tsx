@@ -23,18 +23,6 @@ export default function Semana() {
       src: '/photos/equipe_lpy.JPG',
       alt: 'Três dos organizadores, vestidos com a camiseta do evento em rosa, estão configurando o som para próxima apresentação.',
     },
-    {
-      src: '/photos/encontro.JPG',
-      alt: 'Em roda, vários ex-alunos e atuais professores do departamento conversam com alunos da graduação sobre suas experiências.',
-    },
-    {
-      src: '/photos/coffee_break.JPG',
-      alt: 'Em um corredor amplo, alunos participantes das palestras confraternizam e conversam no Bloco B do IME - USP',
-    },
-    {
-      src: '/photos/coffee_break2.JPG',
-      alt: 'Alunos em rosa da organização distribuem bolo para os participantes da palestra com professores',
-    },
   ]
 
   return (
