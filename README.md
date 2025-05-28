@@ -103,6 +103,7 @@ git remote add server user@user:/path/to/respo/name-bare.git
 Finally, when you need to make the deploy, run on your local machine
 
 ```bash
+git push origin main
 git push server main
 ```
 
