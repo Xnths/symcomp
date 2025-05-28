@@ -22,6 +22,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deploying project
 
+### Manual deploy
+
 Access the machine via ssh key. For that use:
 
 ```bash
@@ -37,6 +39,71 @@ yarn
 yarn build
 exit
 sudo docker restart 120d50346564
+```
+
+### Automatic deploy
+
+In order to create a script to be executed automatically on the physical machine you must add a git bare repository.
+
+**There are a bare folder in the current server**
+
+If you need to create a new one you follow:
+
+Access the machine with the ssh credentials. Then, run the commands.
+
+```bash
+mkdir -p /path/to/respo/name-bare.git
+cd /path/to/resp/name-bare.git
+git init --bare
+```
+
+Create the script **/path/to/respo/name-bare.git/deploy.sh**
+
+```bash
+#!/bin/bash
+
+CONTAINER_ID="120d50346564"
+
+sudo docker exec "$CONTAINER_ID" /bin/bash -c "
+  git pull && \
+  yarn && \
+  yarn build
+"
+
+sudo docker restart "$CONTAINER_ID"
+
+```
+
+Create the file **/path/to/respo/name-bare.git/hooks/post-receive**
+
+```bash
+#!/bin/bash
+
+read oldrev newrev ref
+
+BRANCH="refs/heads/main"
+
+if [ "$ref" == "$BRANCH" ]; then
+    /path/to/respo/deploy.sh
+fi
+```
+
+Make the file executable.
+
+```bash
+chmod +x /path/to/respo/name-bare.git/hooks/post-receive
+```
+
+Exit the remote machine. Next, on your local machine configure another remote.
+
+```bash
+git remote add server user@user:/path/to/respo/name-bare.git
+```
+
+Finally, when you need to make the deploy, run on your local machine
+
+```bash
+git push server main
 ```
 
 ## Contribute with the project
